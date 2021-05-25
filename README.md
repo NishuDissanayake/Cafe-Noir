@@ -7,10 +7,10 @@ Database - MySQL with Microsoft Server Management Studio</br>
 Version Control - GitHUb</br>
 
 ### Team Members
-D M N C Dissanayake
-R A P P Ranasighe
-S H A P Gunathilaka
-N Y Dharmawardhana
-U K P B D Dissanayake
-K D M I Hemachandra
+D M N C Dissanayake</br>
+R A P P Ranasighe</br>
+S H A P Gunathilaka</br>
+N Y Dharmawardhana</br>
+U K B P D Dissanayake</br>
+K D M I Hemachandra</br>
 
