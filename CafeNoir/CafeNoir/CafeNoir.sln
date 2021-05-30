@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafeNoir", "WindowsFormsApp1\CafeNoir.csproj", "{A9846A23-477B-4260-9DF9-688EB44740B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9846A23-477B-4260-9DF9-688EB44740B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9846A23-477B-4260-9DF9-688EB44740B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9846A23-477B-4260-9DF9-688EB44740B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9846A23-477B-4260-9DF9-688EB44740B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC24F6C3-F918-4928-B4A8-63DAA72E3EC8}
+	EndGlobalSection
+EndGlobal
