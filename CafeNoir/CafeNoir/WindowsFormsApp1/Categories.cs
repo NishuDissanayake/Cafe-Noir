@@ -71,5 +71,17 @@ namespace CafeNoir
         {
 
         }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 fm = new Form1();
+            this.Hide();
+            fm.Show();
+        }
     }
 }
