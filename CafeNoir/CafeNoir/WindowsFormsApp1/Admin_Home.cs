@@ -123,5 +123,15 @@ namespace CafeNoir
             this.Hide();
             fm.Show();
         }
+
+        private void Admin_Home_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
