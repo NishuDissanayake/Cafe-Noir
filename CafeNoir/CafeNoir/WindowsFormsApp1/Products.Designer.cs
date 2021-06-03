@@ -46,14 +46,14 @@ namespace CafeNoir
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -176,7 +176,7 @@ namespace CafeNoir
             this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.DisabledState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.Red;
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.DarkRed;
             this.guna2CircleButton1.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
@@ -209,7 +209,7 @@ namespace CafeNoir
             this.label8.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(12, 36);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 27);
+            this.label8.Size = new System.Drawing.Size(36, 24);
             this.label8.TabIndex = 8;
             this.label8.Text = "Hi,";
             // 
@@ -219,7 +219,7 @@ namespace CafeNoir
             this.label1.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(47, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 27);
+            this.label1.Size = new System.Drawing.Size(84, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = "ABC123";
             // 
@@ -327,6 +327,49 @@ namespace CafeNoir
             this.panel4.Size = new System.Drawing.Size(860, 221);
             this.panel4.TabIndex = 7;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(13, 83);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(196, 21);
+            this.comboBox1.TabIndex = 19;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(610, 83);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(196, 20);
+            this.textBox3.TabIndex = 18;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(304, 83);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(196, 20);
+            this.textBox2.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(606, 32);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 34);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Unit Price";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(300, 32);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(123, 34);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Item Name";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -361,49 +404,6 @@ namespace CafeNoir
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(290, 117);
             this.dataGridView1.TabIndex = 8;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(300, 32);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 34);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Item Name";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(606, 32);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 34);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Unit Price";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(304, 83);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 20);
-            this.textBox2.TabIndex = 17;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(610, 83);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 20);
-            this.textBox3.TabIndex = 18;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(13, 83);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 21);
-            this.comboBox1.TabIndex = 19;
             // 
             // ItemName
             // 
