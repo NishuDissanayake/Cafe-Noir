@@ -59,6 +59,18 @@ namespace CafeNoir
 
         private void guna2Button11_Click(object sender, EventArgs e)
         {
+            string usertype = utype.Text;
+            string uname = name.Text;
+            string nic = nicnumber.Text;
+            string phonenum = pnumber.Text;
+            string username = usern.Text;
+            string pwd = pass.Text;
+
+            string add = "INSERT INTO UserTable(UserType, Name, NIC, PhoneNumber, UserName, PassCode) VALUES ('" + usertype + "' , '" + uname + "' , '" + nic + "' , '" + phonenum + "' , '" + username + "' , '" + pwd + "');";
+
+            databaseconnection db = new databaseconnection();
+            string feedback = db.dataconnection(add);
+            MessageBox.Show(feedback);
 
         }
 
@@ -78,6 +90,11 @@ namespace CafeNoir
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void name_TextChanged(object sender, EventArgs e)
         {
 
         }

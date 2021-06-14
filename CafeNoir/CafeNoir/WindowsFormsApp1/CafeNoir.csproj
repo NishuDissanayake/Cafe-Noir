@@ -65,6 +65,7 @@
     <Compile Include="Categories.Designer.cs">
       <DependentUpon>Categories.cs</DependentUpon>
     </Compile>
+    <Compile Include="databaseconnection.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

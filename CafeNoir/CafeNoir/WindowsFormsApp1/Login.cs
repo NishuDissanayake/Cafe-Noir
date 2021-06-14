@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Data.SqlClient;
 
 
 namespace CafeNoir
@@ -65,5 +66,47 @@ namespace CafeNoir
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+            string username = uname.Text;
+            string pwd = pass.Text;
+
+            SqlConnection con = new SqlConnection(@"Data Source=localhost;Initial Catalog=CafeNoir;Integrated Security=True");
+
+            string passw = "SELECT PassCode FROM UserTable WHERE UserName =  '" + username + "';";
+           
+
+            SqlCommand com = new SqlCommand(passw, con);    
+                
+             try
+            {
+                con.Open();
+                com.ExecuteNonQuery();
+               
+                
+                
+            }
+            catch (SqlException sc)
+            {
+                MessageBox.Show(sc.ToString());
+
+            }
+            finally
+            {
+                con.Close();
+
+            }
+            MessageBox.Show(passw);
+
+
+
+
+
+        }
     }
 }
+
+
+
