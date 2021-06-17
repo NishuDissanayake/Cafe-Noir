@@ -9,12 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Data.SqlClient;
-
+using System.Configuration;
 
 namespace CafeNoir
 {
     public partial class Login : Form
     {
+        private SqlConnection con;
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
        (
@@ -69,39 +71,46 @@ namespace CafeNoir
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-            string username = uname.Text;
-            string pwd = pass.Text;
+            con = new SqlConnection(ConfigurationManager.ConnectionStrings["CC"].ConnectionString);
 
-            SqlConnection con = new SqlConnection(@"Data Source=localhost;Initial Catalog=CafeNoir;Integrated Security=True");
-
-            string passw = "SELECT PassCode FROM UserTable WHERE UserName =  '" + username + "';";
-           
-
-            SqlCommand com = new SqlCommand(passw, con);    
-                
-             try
+            try
             {
+                SqlCommand com = new SqlCommand("role_login", con);
+                com.CommandType = CommandType.StoredProcedure;
                 con.Open();
-                com.ExecuteNonQuery();
-               
-                
-                
+                com.Parameters.AddWithValue("@UName", uname.Text);
+                com.Parameters.AddWithValue("@PCode", pass.Text);
+                SqlDataReader rd = com.ExecuteReader();
+                if (rd.HasRows)
+                {
+                    rd.Read();
+                    if (rd[1].ToString()=="Admin")
+                    {
+                        Admin_Home ah = new Admin_Home();
+                        ah.Show();
+                        this.Hide();
+                    }
+                    else if (rd[1].ToString()=="Staff")
+                    {
+                        Staff_Home sf = new Staff_Home();
+                        sf.Show();
+                        this.Hide();
+                    }   
+                    else
+                    {
+                        MessageBox.Show("An error occured");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Credentials");
+                }
+
             }
-            catch (SqlException sc)
+            catch(SqlException ex)
             {
-                MessageBox.Show(sc.ToString());
-
+                MessageBox.Show(ex.ToString());
             }
-            finally
-            {
-                con.Close();
-
-            }
-            MessageBox.Show(passw);
-
-
-
 
 
         }
