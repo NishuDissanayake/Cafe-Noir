@@ -67,6 +67,7 @@
       <DependentUpon>Categories.cs</DependentUpon>
     </Compile>
     <Compile Include="databaseconnection.cs" />
+    <Compile Include="DGVPrinter.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
