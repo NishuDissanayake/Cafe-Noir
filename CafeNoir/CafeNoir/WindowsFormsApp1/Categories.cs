@@ -150,5 +150,10 @@ namespace CafeNoir
             string feedback = db.dataconnection(del);
             MessageBox.Show(feedback);
         }
+
+        private void category_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
