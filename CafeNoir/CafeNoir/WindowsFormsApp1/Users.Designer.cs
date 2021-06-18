@@ -39,12 +39,6 @@ namespace CafeNoir
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NIC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pass = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -78,7 +72,7 @@ namespace CafeNoir
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.Location = new System.Drawing.Point(0, -1);
-            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
@@ -98,7 +92,7 @@ namespace CafeNoir
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
             this.guna2Button5.Location = new System.Drawing.Point(45, 374);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
             this.guna2Button5.Size = new System.Drawing.Size(281, 68);
@@ -117,7 +111,7 @@ namespace CafeNoir
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(45, 86);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(281, 68);
@@ -136,7 +130,7 @@ namespace CafeNoir
             this.guna2Button4.ForeColor = System.Drawing.Color.Black;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
             this.guna2Button4.Location = new System.Drawing.Point(45, 299);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
             this.guna2Button4.Size = new System.Drawing.Size(281, 68);
@@ -165,7 +159,7 @@ namespace CafeNoir
             this.guna2Button3.ForeColor = System.Drawing.Color.Black;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Location = new System.Drawing.Point(45, 149);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
             this.guna2Button3.Size = new System.Drawing.Size(281, 68);
@@ -184,7 +178,7 @@ namespace CafeNoir
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Location = new System.Drawing.Point(45, 224);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(281, 68);
@@ -210,7 +204,7 @@ namespace CafeNoir
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Location = new System.Drawing.Point(241, 12);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1224, 692);
             this.panel2.TabIndex = 28;
@@ -218,13 +212,6 @@ namespace CafeNoir
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ItemName,
-            this.Price,
-            this.Username,
-            this.PhoneNumber,
-            this.NIC,
-            this.Password});
             this.dataGridView1.Location = new System.Drawing.Point(157, 470);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
@@ -232,48 +219,6 @@ namespace CafeNoir
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(923, 193);
             this.dataGridView1.TabIndex = 8;
-            // 
-            // ItemName
-            // 
-            this.ItemName.HeaderText = "User Type";
-            this.ItemName.MinimumWidth = 6;
-            this.ItemName.Name = "ItemName";
-            this.ItemName.Width = 125;
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Name";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
-            this.Price.Width = 112;
-            // 
-            // Username
-            // 
-            this.Username.HeaderText = "Username";
-            this.Username.MinimumWidth = 6;
-            this.Username.Name = "Username";
-            this.Username.Width = 125;
-            // 
-            // PhoneNumber
-            // 
-            this.PhoneNumber.HeaderText = "Phone Number";
-            this.PhoneNumber.MinimumWidth = 6;
-            this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.Width = 125;
-            // 
-            // NIC
-            // 
-            this.NIC.HeaderText = "NIC";
-            this.NIC.MinimumWidth = 6;
-            this.NIC.Name = "NIC";
-            this.NIC.Width = 125;
-            // 
-            // Password
-            // 
-            this.Password.HeaderText = "Password";
-            this.Password.MinimumWidth = 6;
-            this.Password.Name = "Password";
-            this.Password.Width = 125;
             // 
             // panel4
             // 
@@ -296,7 +241,7 @@ namespace CafeNoir
             this.panel4.Controls.Add(this.guna2Button6);
             this.panel4.Controls.Add(this.guna2Button7);
             this.panel4.Location = new System.Drawing.Point(32, 34);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1147, 395);
             this.panel4.TabIndex = 7;
@@ -304,7 +249,7 @@ namespace CafeNoir
             // pass
             // 
             this.pass.Location = new System.Drawing.Point(813, 206);
-            this.pass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pass.Margin = new System.Windows.Forms.Padding(4);
             this.pass.Name = "pass";
             this.pass.PasswordChar = '*';
             this.pass.Size = new System.Drawing.Size(260, 22);
@@ -324,7 +269,7 @@ namespace CafeNoir
             // usern
             // 
             this.usern.Location = new System.Drawing.Point(405, 206);
-            this.usern.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usern.Margin = new System.Windows.Forms.Padding(4);
             this.usern.Name = "usern";
             this.usern.Size = new System.Drawing.Size(260, 22);
             this.usern.TabIndex = 23;
@@ -344,7 +289,7 @@ namespace CafeNoir
             // pnumber
             // 
             this.pnumber.Location = new System.Drawing.Point(23, 206);
-            this.pnumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnumber.Margin = new System.Windows.Forms.Padding(4);
             this.pnumber.Name = "pnumber";
             this.pnumber.Size = new System.Drawing.Size(260, 22);
             this.pnumber.TabIndex = 21;
@@ -367,7 +312,7 @@ namespace CafeNoir
             "Admin",
             "Staff"});
             this.utype.Location = new System.Drawing.Point(17, 70);
-            this.utype.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.utype.Margin = new System.Windows.Forms.Padding(4);
             this.utype.Name = "utype";
             this.utype.Size = new System.Drawing.Size(260, 24);
             this.utype.TabIndex = 19;
@@ -375,7 +320,7 @@ namespace CafeNoir
             // nicnumber
             // 
             this.nicnumber.Location = new System.Drawing.Point(813, 70);
-            this.nicnumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nicnumber.Margin = new System.Windows.Forms.Padding(4);
             this.nicnumber.Name = "nicnumber";
             this.nicnumber.Size = new System.Drawing.Size(260, 22);
             this.nicnumber.TabIndex = 18;
@@ -383,7 +328,7 @@ namespace CafeNoir
             // name
             // 
             this.name.Location = new System.Drawing.Point(405, 70);
-            this.name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.name.Margin = new System.Windows.Forms.Padding(4);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(260, 22);
             this.name.TabIndex = 17;
@@ -435,7 +380,7 @@ namespace CafeNoir
             this.guna2Button12.ForeColor = System.Drawing.Color.Black;
             this.guna2Button12.HoverState.Parent = this.guna2Button12;
             this.guna2Button12.Location = new System.Drawing.Point(237, 277);
-            this.guna2Button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button12.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button12.Name = "guna2Button12";
             this.guna2Button12.ShadowDecoration.Parent = this.guna2Button12;
             this.guna2Button12.Size = new System.Drawing.Size(163, 79);
@@ -454,7 +399,7 @@ namespace CafeNoir
             this.guna2Button11.ForeColor = System.Drawing.Color.Black;
             this.guna2Button11.HoverState.Parent = this.guna2Button11;
             this.guna2Button11.Location = new System.Drawing.Point(461, 277);
-            this.guna2Button11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button11.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button11.Name = "guna2Button11";
             this.guna2Button11.ShadowDecoration.Parent = this.guna2Button11;
             this.guna2Button11.Size = new System.Drawing.Size(163, 79);
@@ -473,7 +418,7 @@ namespace CafeNoir
             this.guna2Button8.ForeColor = System.Drawing.Color.Black;
             this.guna2Button8.HoverState.Parent = this.guna2Button8;
             this.guna2Button8.Location = new System.Drawing.Point(689, 277);
-            this.guna2Button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
             this.guna2Button8.Size = new System.Drawing.Size(163, 79);
@@ -488,11 +433,11 @@ namespace CafeNoir
             this.guna2Button6.CustomImages.Parent = this.guna2Button6;
             this.guna2Button6.DisabledState.Parent = this.guna2Button6;
             this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.guna2Button6.ForeColor = System.Drawing.Color.Black;
             this.guna2Button6.HoverState.Parent = this.guna2Button6;
             this.guna2Button6.Location = new System.Drawing.Point(921, 277);
-            this.guna2Button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
             this.guna2Button6.Size = new System.Drawing.Size(163, 79);
@@ -511,7 +456,7 @@ namespace CafeNoir
             this.guna2Button7.ForeColor = System.Drawing.Color.Black;
             this.guna2Button7.HoverState.Parent = this.guna2Button7;
             this.guna2Button7.Location = new System.Drawing.Point(23, 277);
-            this.guna2Button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
             this.guna2Button7.Size = new System.Drawing.Size(163, 79);
@@ -535,7 +480,7 @@ namespace CafeNoir
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2CircleButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Users";
             this.Text = "Users";
             this.Load += new System.EventHandler(this.Users_Load);
@@ -578,11 +523,5 @@ namespace CafeNoir
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox pnumber;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Username;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PhoneNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NIC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Password;
     }
 }

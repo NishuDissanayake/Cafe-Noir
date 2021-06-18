@@ -45,6 +45,8 @@ namespace CafeNoir
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.newname = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.category = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
@@ -56,8 +58,6 @@ namespace CafeNoir
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.newname = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -277,6 +277,40 @@ namespace CafeNoir
             this.panel4.Size = new System.Drawing.Size(1147, 272);
             this.panel4.TabIndex = 7;
             // 
+            // newname
+            // 
+            this.newname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.newname.DefaultText = "";
+            this.newname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.newname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.newname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.newname.DisabledState.Parent = this.newname;
+            this.newname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.newname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.newname.FocusedState.Parent = this.newname;
+            this.newname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.newname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.newname.HoverState.Parent = this.newname;
+            this.newname.Location = new System.Drawing.Point(722, 82);
+            this.newname.Name = "newname";
+            this.newname.PasswordChar = '\0';
+            this.newname.PlaceholderText = "";
+            this.newname.SelectedText = "";
+            this.newname.ShadowDecoration.Parent = this.newname;
+            this.newname.Size = new System.Drawing.Size(335, 36);
+            this.newname.TabIndex = 14;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(702, 32);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(397, 55);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "New Name";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // category
             // 
             this.category.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -299,6 +333,7 @@ namespace CafeNoir
             this.category.ShadowDecoration.Parent = this.category;
             this.category.Size = new System.Drawing.Size(335, 36);
             this.category.TabIndex = 12;
+            this.category.TextChanged += new System.EventHandler(this.category_TextChanged_1);
             // 
             // label3
             // 
@@ -426,40 +461,6 @@ namespace CafeNoir
             // 
             this.guna2Elipse4.BorderRadius = 30;
             this.guna2Elipse4.TargetControl = this;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(702, 32);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(397, 55);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "New Name";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // newname
-            // 
-            this.newname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.newname.DefaultText = "";
-            this.newname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.newname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.newname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.newname.DisabledState.Parent = this.newname;
-            this.newname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.newname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.newname.FocusedState.Parent = this.newname;
-            this.newname.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.newname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.newname.HoverState.Parent = this.newname;
-            this.newname.Location = new System.Drawing.Point(722, 82);
-            this.newname.Name = "newname";
-            this.newname.PasswordChar = '\0';
-            this.newname.PlaceholderText = "";
-            this.newname.SelectedText = "";
-            this.newname.ShadowDecoration.Parent = this.newname;
-            this.newname.Size = new System.Drawing.Size(335, 36);
-            this.newname.TabIndex = 14;
             // 
             // Categories
             // 

@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace CafeNoir
 {
@@ -49,11 +50,26 @@ namespace CafeNoir
 
         private void guna2Button8_Click(object sender, EventArgs e)
         {
+            string nic = nicnumber.Text;
+            
+            string del = "DELETE FROM UserTable WHERE  NIC = '" + nic + "' ;";
 
+            databaseconnection db = new databaseconnection();
+            string feedback = db.dataconnection(del);
+            MessageBox.Show(feedback);
         }
 
         private void guna2Button12_Click(object sender, EventArgs e)
         {
+            string nic = nicnumber.Text;
+            string phonenum = pnumber.Text;
+            string pwd = pass.Text;
+
+            string up = "UPDATE UserTable SET PhoneNumber = '" + phonenum + "', PassCode = '" + pwd + "' WHERE NIC = '" + nic + "';";
+
+            databaseconnection db = new databaseconnection();
+            string feedback = db.dataconnection(up);
+            MessageBox.Show(feedback);
 
         }
 
@@ -76,11 +92,25 @@ namespace CafeNoir
 
         private void guna2Button7_Click(object sender, EventArgs e)
         {
-
+            utype.ResetText();
+            name.ResetText();
+            nicnumber.ResetText();
+            pnumber.ResetText();
+            usern.ResetText();
+            pass.ResetText();
         }
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
+            string qury = "SELECT * FROM UserTable";
+            SqlConnection con = new SqlConnection(@"Data Source = localhost; Initial Catalog = CafeNoir; Integrated Security = True");
+            SqlCommand com = new SqlCommand();
+            com.Connection = con;
+            com.CommandText = qury;
+            SqlDataAdapter dd = new SqlDataAdapter(com);
+            DataSet ds = new DataSet();
+            dd.Fill(ds, "UserTable");
+            dataGridView1.DataSource = ds.Tables["UserTable"];
 
         }
 
