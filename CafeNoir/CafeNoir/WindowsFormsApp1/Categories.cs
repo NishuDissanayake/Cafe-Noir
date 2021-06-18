@@ -103,6 +103,7 @@ namespace CafeNoir
         private void guna2Button7_Click_1(object sender, EventArgs e)
         {
             category.ResetText();
+            newname.ResetText();
         }
 
         private void category_TextChanged(object sender, EventArgs e)
