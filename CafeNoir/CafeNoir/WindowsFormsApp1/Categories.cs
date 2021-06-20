@@ -155,5 +155,12 @@ namespace CafeNoir
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Admin_Home ob1 = new Admin_Home();
+            ob1.Show();
+            this.Hide();
+        }
     }
 }
