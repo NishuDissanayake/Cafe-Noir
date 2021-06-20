@@ -167,6 +167,7 @@ namespace CafeNoir
             this.guna2Button4.TabIndex = 2;
             this.guna2Button4.Text = "Users";
             this.guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // label8
             // 
@@ -241,7 +242,7 @@ namespace CafeNoir
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(215, 295);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -281,7 +282,7 @@ namespace CafeNoir
             this.newname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.newname.HoverState.Parent = this.newname;
             this.newname.Location = new System.Drawing.Point(542, 67);
-            this.newname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.newname.Margin = new System.Windows.Forms.Padding(2);
             this.newname.Name = "newname";
             this.newname.PasswordChar = '\0';
             this.newname.PlaceholderText = "";
@@ -315,7 +316,7 @@ namespace CafeNoir
             this.category.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.category.HoverState.Parent = this.category;
             this.category.Location = new System.Drawing.Point(42, 67);
-            this.category.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.category.Margin = new System.Windows.Forms.Padding(2);
             this.category.Name = "category";
             this.category.PasswordChar = '\0';
             this.category.PlaceholderText = "";
@@ -455,7 +456,7 @@ namespace CafeNoir
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Categories";
             this.Text = "Categories";
             this.Load += new System.EventHandler(this.Categories_Load);
