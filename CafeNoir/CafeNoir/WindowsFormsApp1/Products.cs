@@ -104,5 +104,26 @@ namespace CafeNoir
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Admin_Home ob1 = new Admin_Home();
+            ob1.Show();
+            this.Hide();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            Categories ob2 = new Categories();
+            ob2.Show();
+            this.Hide();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            Users ob3 = new Users();
+            ob3.Show();
+            this.Hide();
+        }
     }
 }
