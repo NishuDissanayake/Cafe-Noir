@@ -75,7 +75,7 @@ namespace CafeNoir
 
             try
             {
-                SqlCommand com = new SqlCommand("role_login", con);
+                SqlCommand com = new SqlCommand("roleLogin", con);
                 com.CommandType = CommandType.StoredProcedure;
                 con.Open();
                 com.Parameters.AddWithValue("@UName", uname.Text);
