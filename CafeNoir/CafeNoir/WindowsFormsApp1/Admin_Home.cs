@@ -165,5 +165,31 @@ namespace CafeNoir
             dataGridView1.Rows.Clear();
             label8.Text = "Rs. " + total;
         }
+
+        private void guna2Button10_Click(object sender, EventArgs e)
+        {
+            Categories ob1 = new Categories();
+            ob1.Show();
+            this.Hide();
+        }
+
+        private void guna2Button9_Click(object sender, EventArgs e)
+        {
+            Products ob2 = new Products();
+            ob2.Show();
+            this.Hide();
+        }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+            Users ob3 = new Users();
+            ob3.Show();
+            this.Hide();
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
