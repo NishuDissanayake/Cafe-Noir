@@ -56,7 +56,9 @@ namespace CafeNoir
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            uname.ResetText();
+            pass.ResetText();
+            
         }
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)
