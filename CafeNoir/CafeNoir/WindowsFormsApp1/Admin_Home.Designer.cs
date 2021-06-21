@@ -149,7 +149,7 @@ namespace CafeNoir
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(26, 106);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 25);
+            this.label5.Size = new System.Drawing.Size(86, 24);
             this.label5.TabIndex = 2;
             this.label5.Text = "Quantity";
             // 
@@ -285,7 +285,7 @@ namespace CafeNoir
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(360, 15);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 25);
+            this.label6.Size = new System.Drawing.Size(58, 24);
             this.label6.TabIndex = 3;
             this.label6.Text = "Price";
             // 
@@ -325,7 +325,7 @@ namespace CafeNoir
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(34, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 25);
+            this.label3.Size = new System.Drawing.Size(110, 24);
             this.label3.TabIndex = 0;
             this.label3.Text = "Categories";
             // 
@@ -344,7 +344,7 @@ namespace CafeNoir
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(40, 36);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 25);
+            this.label2.Size = new System.Drawing.Size(103, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Admin123";
             // 
@@ -354,7 +354,7 @@ namespace CafeNoir
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 25);
+            this.label1.Size = new System.Drawing.Size(36, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hi,";
             // 
@@ -370,6 +370,7 @@ namespace CafeNoir
             this.linkLabel1.TabIndex = 10;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "LogOut";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // guna2CircleButton1
             // 
@@ -515,7 +516,7 @@ namespace CafeNoir
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Admin_Home";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
