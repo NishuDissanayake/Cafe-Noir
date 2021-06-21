@@ -76,13 +76,13 @@ namespace CafeNoir
         protected decimal total = 0;
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            if (TotalBox.Text != "0" && TotalBox.Text != "")
+            if (TotalBox.Text != "0.00" && TotalBox.Text != "")
             {
-                n = dataGridView1.Rows.Add();
-                dataGridView1.Rows[n].Cells[0].Value = ItemBox.Text;
-                dataGridView1.Rows[n].Cells[1].Value = PriceBox.Text;
-                dataGridView1.Rows[n].Cells[2].Value = QuantityBox.Text;
-                dataGridView1.Rows[n].Cells[3].Value = TotalBox.Text;
+                n = dgvAdmin_Bill.Rows.Add();
+                dgvAdmin_Bill.Rows[n].Cells[0].Value = ItemBox.Text;
+                dgvAdmin_Bill.Rows[n].Cells[1].Value = PriceBox.Text;
+                dgvAdmin_Bill.Rows[n].Cells[2].Value = QuantityBox.Text;
+                dgvAdmin_Bill.Rows[n].Cells[3].Value = TotalBox.Text;
 
                 total = total + decimal.Parse(TotalBox.Text);
                 label8.Text = "Rs. " + total;
@@ -125,7 +125,7 @@ namespace CafeNoir
         {
             try
             {
-                amount = decimal.Parse(dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString());
+                amount = decimal.Parse(dgvAdmin_Bill.Rows[e.RowIndex].Cells[3].Value.ToString());
             }
             catch
             {
@@ -137,7 +137,7 @@ namespace CafeNoir
         {
             try
             {
-                dataGridView1.Rows.RemoveAt(this.dataGridView1.SelectedRows[0].Index);
+                dgvAdmin_Bill.Rows.RemoveAt(this.dgvAdmin_Bill.SelectedRows[0].Index);
             }
             catch
             {
@@ -159,10 +159,10 @@ namespace CafeNoir
             printer.HeaderCellAlignment = StringAlignment.Near;
             printer.Footer = "Total Amount: " + label8.Text;
             printer.FooterSpacing = 15;
-            printer.PrintDataGridView(dataGridView1);
+            printer.PrintDataGridView(dgvAdmin_Bill);
 
             total = 0;
-            dataGridView1.Rows.Clear();
+            dgvAdmin_Bill.Rows.Clear();
             label8.Text = "Rs. " + total;
         }
 
