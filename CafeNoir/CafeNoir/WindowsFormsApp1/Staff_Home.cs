@@ -21,30 +21,8 @@ namespace CafeNoir
             InitializeComponent();
         }
 
-        private bool mouseDown;
-        private Point lastLocation;
-
-        private void Staff_MouseDown(object sender, MouseEventArgs e)
-        {
-            mouseDown = true;
-            lastLocation = e.Location;
-        }
-
-        private void Staff_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (mouseDown)
-            {
-                this.Location = new Point(
-                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
-
-                this.Update();
-            }
-        }
-
-        private void Staff_MouseUp(object sender, MouseEventArgs e)
-        {
-            mouseDown = false;
-        }
+       
+      
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
@@ -87,7 +65,7 @@ namespace CafeNoir
         protected decimal total = 0;
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            if (TotalBox.Text != "0" && TotalBox.Text != "")
+            if (TotalBox.Text != "0.00" && TotalBox.Text != "")
             {
                 n = dataGridView1.Rows.Add();
                 dataGridView1.Rows[n].Cells[0].Value = ItemBox.Text;
