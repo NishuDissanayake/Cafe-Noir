@@ -212,7 +212,6 @@ C:\Users\User\Desktop\cafe\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debu
 C:\Users\User\Desktop\cafe\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.csproj.CopyComplete
 C:\Users\User\Desktop\cafe\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.exe
 C:\Users\User\Desktop\cafe\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.pdb
-C:\Users\User\Desktop\cafe\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Form1.resources
 C:\Users\Mahima\Documents\C# Project Updated 3\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.exe.config
 C:\Users\Mahima\Documents\C# Project Updated 3\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.exe
 C:\Users\Mahima\Documents\C# Project Updated 3\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.pdb
