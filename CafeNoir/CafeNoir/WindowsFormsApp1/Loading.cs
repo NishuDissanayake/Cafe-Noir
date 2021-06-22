@@ -13,6 +13,8 @@ namespace CafeNoir
 {
     public partial class Loading : Form
     {
+        SByte ProgressBarRed = 2;
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn
@@ -51,6 +53,23 @@ namespace CafeNoir
         private void Loading_Load(object sender, EventArgs e)
         {
             timer1.Start();
+            ModifyProgressBarColor.SetState(Myprogress, ProgressBarRed);
+        }
+
+        private void Myprogress_Click(object sender, EventArgs e)
+        {
+
         }
     }
+
+    public static class ModifyProgressBarColor
+    {
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = false)]
+        static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr w, IntPtr l);
+        public static void SetState (this ProgressBar pBar, int state)
+        {
+            SendMessage(pBar.Handle, 1040, (IntPtr)state, IntPtr.Zero);
+        }
+    }
+
 }

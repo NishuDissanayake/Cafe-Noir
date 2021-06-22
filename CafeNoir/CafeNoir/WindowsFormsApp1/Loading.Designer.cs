@@ -36,7 +36,9 @@ namespace CafeNoir
             this.label2 = new System.Windows.Forms.Label();
             this.Myprogress = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -73,15 +75,21 @@ namespace CafeNoir
             // 
             // Myprogress
             // 
-            this.Myprogress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Myprogress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Myprogress.ForeColor = System.Drawing.Color.Yellow;
             this.Myprogress.Location = new System.Drawing.Point(-1, 566);
             this.Myprogress.Name = "Myprogress";
             this.Myprogress.Size = new System.Drawing.Size(1100, 18);
             this.Myprogress.TabIndex = 3;
+            this.Myprogress.Click += new System.EventHandler(this.Myprogress_Click);
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Loading
             // 
@@ -99,6 +107,7 @@ namespace CafeNoir
             this.Text = "Loading";
             this.Load += new System.EventHandler(this.Loading_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,5 +120,6 @@ namespace CafeNoir
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ProgressBar Myprogress;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
