@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Security.Cryptography;
 
 namespace CafeNoir
 {
@@ -81,7 +82,7 @@ namespace CafeNoir
                 com.CommandType = CommandType.StoredProcedure;
                 con.Open();
                 com.Parameters.AddWithValue("@UName", uname.Text);
-                com.Parameters.AddWithValue("@PCode", pass.Text);
+                com.Parameters.AddWithValue("@PCode",pass.Text);
                 SqlDataReader rd = com.ExecuteReader();
                 if (rd.HasRows)
                 {
@@ -114,6 +115,23 @@ namespace CafeNoir
                 MessageBox.Show(ex.ToString());
             }
 
+
+        }
+
+        public string Hash(Byte[] val)
+        {
+            using (SHA1Managed shal = new SHA1Managed())
+            {
+                var hash = shal.ComputeHash(val);
+                return Convert.ToBase64String(hash);
+            }
+        }
+
+        private void pass_TextChanged(object sender, EventArgs e)
+        {
+            Byte[] passHash = System.Text.Encoding.UTF8.GetBytes(pass.Text.ToString());
+
+            string pwd = Hash(passHash);
 
         }
     }

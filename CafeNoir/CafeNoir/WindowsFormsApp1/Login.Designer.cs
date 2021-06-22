@@ -65,6 +65,7 @@ namespace CafeNoir
             this.pass.PasswordChar = '*';
             this.pass.Size = new System.Drawing.Size(255, 34);
             this.pass.TabIndex = 2;
+            this.pass.TextChanged += new System.EventHandler(this.pass_TextChanged);
             // 
             // label2
             // 
