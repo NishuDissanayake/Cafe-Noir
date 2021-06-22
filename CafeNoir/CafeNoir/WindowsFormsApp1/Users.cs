@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
 
 namespace CafeNoir
 {
@@ -61,9 +62,11 @@ namespace CafeNoir
 
         private void guna2Button12_Click(object sender, EventArgs e)
         {
+            Byte[] passHash = System.Text.Encoding.UTF8.GetBytes(pass.Text.ToString());
+
             string nic = nicnumber.Text;
             string phonenum = pnumber.Text;
-            string pwd = pass.Text;
+            string pwd = Hash(passHash);
 
             string up = "UPDATE UserTable SET PhoneNumber = '" + phonenum + "', PassCode = '" + pwd + "' WHERE NIC = '" + nic + "';";
 
@@ -73,14 +76,25 @@ namespace CafeNoir
 
         }
 
+        public string Hash(Byte[] val)
+        {
+            using (SHA1Managed shal = new SHA1Managed())
+            {
+                var hash = shal.ComputeHash(val);
+                return Convert.ToBase64String(hash);
+            }
+        }
+
         private void guna2Button11_Click(object sender, EventArgs e)
         {
+            Byte[] passHash = System.Text.Encoding.UTF8.GetBytes(pass.Text.ToString());
+
             string usertype = utype.Text;
             string uname = name.Text;
             string nic = nicnumber.Text;
             string phonenum = pnumber.Text;
             string username = usern.Text;
-            string pwd = pass.Text;
+            string pwd = Hash(passHash);
 
             string add = "INSERT INTO UserTable(UserType, Name, NIC, PhoneNumber, UserName, PassCode) VALUES ('" + usertype + "' , '" + uname + "' , '" + nic + "' , '" + phonenum + "' , '" + username + "' , '" + pwd + "');";
 
