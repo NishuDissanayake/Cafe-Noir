@@ -244,7 +244,7 @@ namespace CafeNoir
 
         private void Staff_Home_Load(object sender, EventArgs e)
         {
-
+            label2.Text = Login.recby;
         }
     }
 }
