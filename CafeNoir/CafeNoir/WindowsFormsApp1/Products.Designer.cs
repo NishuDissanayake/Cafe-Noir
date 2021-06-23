@@ -73,11 +73,10 @@ namespace CafeNoir
             this.guna2Button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(45, 374);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button5.Location = new System.Drawing.Point(34, 304);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(281, 68);
+            this.guna2Button5.Size = new System.Drawing.Size(211, 55);
             this.guna2Button5.TabIndex = 3;
             this.guna2Button5.Text = "Dashboard";
             this.guna2Button5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -92,11 +91,10 @@ namespace CafeNoir
             this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(45, 86);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Location = new System.Drawing.Point(34, 70);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(281, 68);
+            this.guna2Button1.Size = new System.Drawing.Size(211, 55);
             this.guna2Button1.TabIndex = 9;
             this.guna2Button1.Text = "Bill an Order";
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -112,11 +110,10 @@ namespace CafeNoir
             this.guna2Button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button4.ForeColor = System.Drawing.Color.Black;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(45, 299);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button4.Location = new System.Drawing.Point(34, 243);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(281, 68);
+            this.guna2Button4.Size = new System.Drawing.Size(211, 55);
             this.guna2Button4.TabIndex = 2;
             this.guna2Button4.Text = "Users";
             this.guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -131,11 +128,10 @@ namespace CafeNoir
             this.guna2Button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.Black;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(45, 149);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button3.Location = new System.Drawing.Point(34, 121);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(281, 68);
+            this.guna2Button3.Size = new System.Drawing.Size(211, 55);
             this.guna2Button3.TabIndex = 1;
             this.guna2Button3.Text = "Categories";
             this.guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -151,11 +147,10 @@ namespace CafeNoir
             this.guna2Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(45, 224);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button2.Location = new System.Drawing.Point(34, 182);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(281, 68);
+            this.guna2Button2.Size = new System.Drawing.Size(211, 55);
             this.guna2Button2.TabIndex = 0;
             this.guna2Button2.Text = "Products";
             this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -173,9 +168,8 @@ namespace CafeNoir
             this.panel1.Controls.Add(this.guna2Button2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(244, 715);
+            this.panel1.Size = new System.Drawing.Size(183, 581);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -188,12 +182,11 @@ namespace CafeNoir
             this.guna2CircleButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(3, 3);
-            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(2, 2);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(45, 42);
+            this.guna2CircleButton1.Size = new System.Drawing.Size(34, 34);
             this.guna2CircleButton1.TabIndex = 19;
             this.guna2CircleButton1.Text = "X";
             this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
@@ -204,10 +197,9 @@ namespace CafeNoir
             this.linkLabel1.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(63, 639);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(47, 519);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(119, 43);
+            this.linkLabel1.Size = new System.Drawing.Size(89, 35);
             this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Logout";
@@ -217,10 +209,9 @@ namespace CafeNoir
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 44);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(12, 36);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 29);
+            this.label8.Size = new System.Drawing.Size(41, 25);
             this.label8.TabIndex = 8;
             this.label8.Text = "Hi,";
             // 
@@ -228,10 +219,9 @@ namespace CafeNoir
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(63, 44);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(47, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 29);
+            this.label1.Size = new System.Drawing.Size(97, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "ABC123";
             // 
@@ -245,11 +235,10 @@ namespace CafeNoir
             this.guna2Button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button12.ForeColor = System.Drawing.Color.Black;
             this.guna2Button12.HoverState.Parent = this.guna2Button12;
-            this.guna2Button12.Location = new System.Drawing.Point(249, 177);
-            this.guna2Button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button12.Location = new System.Drawing.Point(187, 144);
             this.guna2Button12.Name = "guna2Button12";
             this.guna2Button12.ShadowDecoration.Parent = this.guna2Button12;
-            this.guna2Button12.Size = new System.Drawing.Size(163, 79);
+            this.guna2Button12.Size = new System.Drawing.Size(122, 64);
             this.guna2Button12.TabIndex = 7;
             this.guna2Button12.Text = "Update";
             this.guna2Button12.Click += new System.EventHandler(this.guna2Button12_Click);
@@ -264,11 +253,10 @@ namespace CafeNoir
             this.guna2Button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button11.ForeColor = System.Drawing.Color.Black;
             this.guna2Button11.HoverState.Parent = this.guna2Button11;
-            this.guna2Button11.Location = new System.Drawing.Point(473, 177);
-            this.guna2Button11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button11.Location = new System.Drawing.Point(355, 144);
             this.guna2Button11.Name = "guna2Button11";
             this.guna2Button11.ShadowDecoration.Parent = this.guna2Button11;
-            this.guna2Button11.Size = new System.Drawing.Size(163, 79);
+            this.guna2Button11.Size = new System.Drawing.Size(122, 64);
             this.guna2Button11.TabIndex = 6;
             this.guna2Button11.Text = "Add";
             this.guna2Button11.Click += new System.EventHandler(this.guna2Button11_Click);
@@ -283,11 +271,10 @@ namespace CafeNoir
             this.guna2Button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button8.ForeColor = System.Drawing.Color.Black;
             this.guna2Button8.HoverState.Parent = this.guna2Button8;
-            this.guna2Button8.Location = new System.Drawing.Point(701, 177);
-            this.guna2Button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button8.Location = new System.Drawing.Point(526, 144);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
-            this.guna2Button8.Size = new System.Drawing.Size(163, 79);
+            this.guna2Button8.Size = new System.Drawing.Size(122, 64);
             this.guna2Button8.TabIndex = 5;
             this.guna2Button8.Text = "Remove";
             this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
@@ -302,11 +289,10 @@ namespace CafeNoir
             this.guna2Button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button6.ForeColor = System.Drawing.Color.Black;
             this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Location = new System.Drawing.Point(933, 177);
-            this.guna2Button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button6.Location = new System.Drawing.Point(700, 144);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(163, 79);
+            this.guna2Button6.Size = new System.Drawing.Size(122, 64);
             this.guna2Button6.TabIndex = 4;
             this.guna2Button6.Text = "Show All";
             this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
@@ -321,11 +307,10 @@ namespace CafeNoir
             this.guna2Button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button7.ForeColor = System.Drawing.Color.Black;
             this.guna2Button7.HoverState.Parent = this.guna2Button7;
-            this.guna2Button7.Location = new System.Drawing.Point(35, 177);
-            this.guna2Button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button7.Location = new System.Drawing.Point(26, 144);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
-            this.guna2Button7.Size = new System.Drawing.Size(163, 79);
+            this.guna2Button7.Size = new System.Drawing.Size(122, 64);
             this.guna2Button7.TabIndex = 3;
             this.guna2Button7.Text = "Clear";
             this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
@@ -344,10 +329,9 @@ namespace CafeNoir
             this.panel4.Controls.Add(this.guna2Button8);
             this.panel4.Controls.Add(this.guna2Button6);
             this.panel4.Controls.Add(this.guna2Button7);
-            this.panel4.Location = new System.Drawing.Point(32, 34);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Location = new System.Drawing.Point(24, 28);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1147, 272);
+            this.panel4.Size = new System.Drawing.Size(860, 221);
             this.panel4.TabIndex = 7;
             // 
             // ComboCategory
@@ -356,35 +340,31 @@ namespace CafeNoir
             this.ComboCategory.Items.AddRange(new object[] {
             "Drinks",
             "Bun"});
-            this.ComboCategory.Location = new System.Drawing.Point(17, 102);
-            this.ComboCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ComboCategory.Location = new System.Drawing.Point(13, 83);
             this.ComboCategory.Name = "ComboCategory";
-            this.ComboCategory.Size = new System.Drawing.Size(260, 24);
+            this.ComboCategory.Size = new System.Drawing.Size(196, 21);
             this.ComboCategory.TabIndex = 19;
             // 
             // txtBoxPrice
             // 
-            this.txtBoxPrice.Location = new System.Drawing.Point(813, 102);
-            this.txtBoxPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoxPrice.Location = new System.Drawing.Point(610, 83);
             this.txtBoxPrice.Name = "txtBoxPrice";
-            this.txtBoxPrice.Size = new System.Drawing.Size(260, 22);
+            this.txtBoxPrice.Size = new System.Drawing.Size(196, 20);
             this.txtBoxPrice.TabIndex = 18;
             // 
             // TxtBoxItemName
             // 
-            this.TxtBoxItemName.Location = new System.Drawing.Point(405, 102);
-            this.TxtBoxItemName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtBoxItemName.Location = new System.Drawing.Point(304, 83);
             this.TxtBoxItemName.Name = "TxtBoxItemName";
-            this.TxtBoxItemName.Size = new System.Drawing.Size(260, 22);
+            this.TxtBoxItemName.Size = new System.Drawing.Size(196, 20);
             this.TxtBoxItemName.TabIndex = 17;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(808, 39);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(606, 32);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(164, 42);
+            this.label6.Size = new System.Drawing.Size(123, 34);
             this.label6.TabIndex = 15;
             this.label6.Text = "Unit Price";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -393,10 +373,9 @@ namespace CafeNoir
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(400, 39);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(300, 32);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 42);
+            this.label5.Size = new System.Drawing.Size(123, 34);
             this.label5.TabIndex = 14;
             this.label5.Text = "Item Name";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -404,10 +383,9 @@ namespace CafeNoir
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 39);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(9, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(164, 42);
+            this.label3.Size = new System.Drawing.Size(123, 34);
             this.label3.TabIndex = 11;
             this.label3.Text = "Category";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -418,22 +396,21 @@ namespace CafeNoir
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(238)))));
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Location = new System.Drawing.Point(241, 12);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(181, 10);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1224, 692);
+            this.panel2.Size = new System.Drawing.Size(918, 562);
             this.panel2.TabIndex = 4;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(281, 393);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(211, 319);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(627, 144);
+            this.dataGridView1.Size = new System.Drawing.Size(470, 117);
             this.dataGridView1.TabIndex = 8;
             // 
             // guna2Elipse1
@@ -453,15 +430,15 @@ namespace CafeNoir
             // 
             // Products
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.ClientSize = new System.Drawing.Size(1485, 715);
+            this.ClientSize = new System.Drawing.Size(1114, 581);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Products";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Products";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

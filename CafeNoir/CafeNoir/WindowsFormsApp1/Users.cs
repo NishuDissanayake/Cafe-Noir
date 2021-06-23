@@ -178,5 +178,12 @@ namespace CafeNoir
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login fm = new Login();
+            this.Hide();
+            fm.Show();
+        }
     }
 }
