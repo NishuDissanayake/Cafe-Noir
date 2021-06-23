@@ -72,8 +72,17 @@ namespace CafeNoir
 
         }
 
+        public static string username;
+
+        public static string recby
+        {
+            get { return username; }
+            set { username = value; }
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
+            recby = uname.Text;
             con = new SqlConnection(ConfigurationManager.ConnectionStrings["CC"].ConnectionString);
 
             try

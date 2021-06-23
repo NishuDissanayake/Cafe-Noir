@@ -27,7 +27,7 @@ namespace CafeNoir
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            label2.Text = Login.recby;
         }
 
         private void guna2CircleButton1_Click_1(object sender, EventArgs e)
