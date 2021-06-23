@@ -82,7 +82,7 @@ namespace CafeNoir
                 com.CommandType = CommandType.StoredProcedure;
                 con.Open();
                 com.Parameters.AddWithValue("@UName", uname.Text);
-                com.Parameters.AddWithValue("@PCode",pass.Text);
+                com.Parameters.AddWithValue("@PCode",pwd);
                 SqlDataReader rd = com.ExecuteReader();
                 if (rd.HasRows)
                 {
@@ -127,11 +127,12 @@ namespace CafeNoir
             }
         }
 
+        string pwd;
         private void pass_TextChanged(object sender, EventArgs e)
         {
             Byte[] passHash = System.Text.Encoding.UTF8.GetBytes(pass.Text.ToString());
 
-            string pwd = Hash(passHash);
+            pwd = Hash(passHash);
 
         }
 
