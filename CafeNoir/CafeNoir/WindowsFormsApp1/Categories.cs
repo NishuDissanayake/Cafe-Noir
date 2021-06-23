@@ -171,5 +171,18 @@ namespace CafeNoir
             ob3.Show();
             this.Hide();
         }
+
+        private void category_Validating(object sender, CancelEventArgs e)
+        {
+            if(string.IsNullOrEmpty(category.Text))
+            {
+                category.Focus();
+                errorProvider1.SetError(category, "!");
+            }
+            else
+            {
+                errorProvider1.SetError(category, "");
+            }
+        }
     }
 }

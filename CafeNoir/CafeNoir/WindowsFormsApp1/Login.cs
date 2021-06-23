@@ -134,6 +134,11 @@ namespace CafeNoir
             string pwd = Hash(passHash);
 
         }
+
+        private void button2_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
 
