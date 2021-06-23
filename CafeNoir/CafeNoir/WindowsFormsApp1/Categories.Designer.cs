@@ -458,6 +458,7 @@ namespace CafeNoir
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Categories";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Categories";
             this.Load += new System.EventHandler(this.Categories_Load);
             this.panel1.ResumeLayout(false);
