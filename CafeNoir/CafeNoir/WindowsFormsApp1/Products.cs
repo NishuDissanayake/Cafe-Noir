@@ -125,5 +125,20 @@ namespace CafeNoir
             ob3.Show();
             this.Hide();
         }
+
+        private void ComboCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboCategory_Validating(object sender, CancelEventArgs e)
+        {
+           
+        }
+
+        private void Products_Validating(object sender, CancelEventArgs e)
+        {
+            
+        }
     }
 }
