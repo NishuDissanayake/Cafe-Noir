@@ -86,6 +86,11 @@ namespace CafeNoir
 
                 total = total + decimal.Parse(TotalBox.Text);
                 label8.Text = "Rs. " + total;
+
+                ItemBox.ResetText();
+                PriceBox.ResetText();
+                QuantityBox.ResetText();
+                TotalBox.ResetText();
             }
             else
             {
@@ -97,6 +102,7 @@ namespace CafeNoir
         {
             QuantityBox.ResetText();
             TotalBox.ResetText();
+            
 
             string text = ItemList.GetItemText(ItemList.SelectedItem);
             ItemBox.Text = text;
@@ -197,6 +203,16 @@ namespace CafeNoir
             Login fm = new Login();
             this.Hide();
             fm.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
