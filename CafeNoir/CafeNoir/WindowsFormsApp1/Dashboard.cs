@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DGVPrinterHelper;
+using System.Drawing.Printing;
+
 
 namespace CafeNoir
 {
@@ -103,6 +106,28 @@ namespace CafeNoir
                 
                 storeMaxId = Convert.ToInt32(sqlCmd.ExecuteScalar());
                 orderBox.Text = storeMaxId.ToString();
+                sqlCmd.Dispose();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT SUM(Total) FROM OrderTable;";
+            SqlCommand sqlCmd;
+            int totVal = 0;
+            try
+            {
+                con.Open();
+
+                sqlCmd = new SqlCommand(sql, con);
+
+                totVal = Convert.ToInt32(sqlCmd.ExecuteScalar());
+                TotBox.Text = totVal.ToString();
                 sqlCmd.Dispose();
                 con.Close();
             }
