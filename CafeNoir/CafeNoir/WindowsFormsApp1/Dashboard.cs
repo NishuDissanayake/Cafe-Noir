@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace CafeNoir
 {
     public partial class Dashboard : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source = localhost; Initial Catalog = CafeNoir; Integrated Security = True");
         public Dashboard()
         {
             InitializeComponent();
@@ -72,6 +74,42 @@ namespace CafeNoir
             Login l = new Login();
             this.Hide();
             l.Show();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            string qury = "SELECT * FROM OrderTable";
+            SqlConnection con = new SqlConnection(@"Data Source = localhost; Initial Catalog = CafeNoir; Integrated Security = True");
+            SqlCommand com = new SqlCommand();
+            com.Connection = con;
+            com.CommandText = qury;
+            SqlDataAdapter dd = new SqlDataAdapter(com);
+            DataSet ds = new DataSet();
+            dd.Fill(ds, "OrderTable");
+            sales_data.DataSource = ds.Tables["OrderTable"];
+        }
+
+        private void guna2Button6_Click_1(object sender, EventArgs e)
+        {
+            string sql = "SELECT MAX(Order_ID) FROM OrderTable";
+            SqlCommand sqlCmd;
+            int storeMaxId = 0;
+            try
+            {
+                
+                con.Open();
+                
+                sqlCmd = new SqlCommand(sql, con);
+                
+                storeMaxId = Convert.ToInt32(sqlCmd.ExecuteScalar());
+                orderBox.Text = storeMaxId.ToString();
+                sqlCmd.Dispose();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }
