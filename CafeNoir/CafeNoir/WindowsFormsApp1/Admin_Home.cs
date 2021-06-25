@@ -9,11 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using DGVPrinterHelper;
+using System.Drawing.Printing;
 
 namespace CafeNoir
 {
     public partial class Admin_Home : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source = localhost; Initial Catalog = CafeNoir; Integrated Security = True");
+        SqlCommand cmd;
+
         databaseconnection dd = new databaseconnection();
         public Admin_Home()
         {
@@ -28,6 +32,32 @@ namespace CafeNoir
         private void Form1_Load(object sender, EventArgs e)
         {
             label2.Text = Login.recby;
+            Categories.Items.Clear();
+            try
+            {
+                con.Open();
+                cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT Name from CategoryTable";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter ad = new SqlDataAdapter(cmd);
+                ad.Fill(dt);
+
+                foreach (DataRow dr in dt.Rows)
+                {
+                    Categories.Items.Add(dr["Name"].ToString());
+                }
+
+            }
+            catch(SqlException s)
+            {
+                MessageBox.Show(s.ToString());
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         private void guna2CircleButton1_Click_1(object sender, EventArgs e)
