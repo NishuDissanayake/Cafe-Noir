@@ -185,5 +185,12 @@ namespace CafeNoir
             this.Hide();
             fm.Show();
         }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            Dashboard d = new Dashboard();
+            this.Hide();
+            d.Show();
+        }
     }
 }

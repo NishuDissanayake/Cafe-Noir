@@ -184,5 +184,12 @@ namespace CafeNoir
                 errorProvider1.SetError(category, "");
             }
         }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            Dashboard d = new Dashboard();
+            this.Hide();
+            d.Show();
+        }
     }
 }
