@@ -8,11 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using DGVPrinterHelper;
+using System.Drawing.Printing;
 
 namespace CafeNoir
 {
     public partial class Products : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source = localhost; Initial Catalog = CafeNoir; Integrated Security = True");
+        SqlCommand cmd;
+
+        databaseconnection dd = new databaseconnection();
         public Products()
         {
             InitializeComponent();
@@ -139,6 +145,36 @@ namespace CafeNoir
         private void Products_Validating(object sender, CancelEventArgs e)
         {
             
+        }
+
+        private void Products_Load(object sender, EventArgs e)
+        {
+            ComboCategory.Items.Clear();
+            try
+            {
+                con.Open();
+                cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT Name from CategoryTable";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter ad = new SqlDataAdapter(cmd);
+                ad.Fill(dt);
+
+                foreach (DataRow dr in dt.Rows)
+                {
+                    ComboCategory.Items.Add(dr["Name"].ToString());
+                }
+
+            }
+            catch (SqlException s)
+            {
+                MessageBox.Show(s.ToString());
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }
