@@ -108,6 +108,11 @@ namespace CafeNoir
         {
             if (TotalBox.Text != "0.00" && TotalBox.Text != "")
             {
+                DateTime now = DateTime.Now;
+                string order = "INSERT INTO OrderTable(Date_Time, Products, Quantity, Total) VALUES ('" + now + "', '" + ItemBox.Text + "', " + QuantityBox.Text + ", " + TotalBox.Text + ");";
+
+                dd.dataconnection(order);
+
                 n = dgvAdmin_Bill.Rows.Add();
                 dgvAdmin_Bill.Rows[n].Cells[0].Value = ItemBox.Text;
                 dgvAdmin_Bill.Rows[n].Cells[1].Value = PriceBox.Text;
@@ -225,7 +230,9 @@ namespace CafeNoir
 
         private void guna2Button7_Click(object sender, EventArgs e)
         {
-            
+            Dashboard d = new Dashboard();
+            this.Hide();
+            d.Show();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

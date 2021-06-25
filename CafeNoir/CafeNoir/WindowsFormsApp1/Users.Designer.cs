@@ -101,6 +101,7 @@ namespace CafeNoir
             this.guna2Button5.TabIndex = 24;
             this.guna2Button5.Text = "Dashboard";
             this.guna2Button5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2Button1
             // 
