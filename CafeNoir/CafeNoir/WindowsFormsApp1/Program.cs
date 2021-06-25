@@ -16,7 +16,7 @@ namespace CafeNoir
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Staff_Home  ());
+            Application.Run(new dashboard ());
         }
     }
 }
