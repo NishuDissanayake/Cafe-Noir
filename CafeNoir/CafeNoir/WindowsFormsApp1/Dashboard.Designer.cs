@@ -40,29 +40,24 @@ namespace CafeNoir
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TotBox = new System.Windows.Forms.TextBox();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.PriceBox = new System.Windows.Forms.TextBox();
+            this.orderBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dgvAdmin_Bill = new System.Windows.Forms.DataGridView();
-            this.OrderID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Products = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sales_data = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAdmin_Bill)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sales_data)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -196,10 +191,10 @@ namespace CafeNoir
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(226)))), ((int)(((byte)(195)))));
             this.panel4.Controls.Add(this.guna2Button2);
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.TotBox);
             this.panel4.Controls.Add(this.guna2Button6);
             this.panel4.Controls.Add(this.guna2Button5);
-            this.panel4.Controls.Add(this.PriceBox);
+            this.panel4.Controls.Add(this.orderBox);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(16, 25);
             this.panel4.Name = "panel4";
@@ -223,12 +218,12 @@ namespace CafeNoir
             this.guna2Button2.TabIndex = 13;
             this.guna2Button2.Text = "Total";
             // 
-            // textBox1
+            // TotBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(585, 117);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(217, 20);
-            this.textBox1.TabIndex = 12;
+            this.TotBox.Location = new System.Drawing.Point(585, 117);
+            this.TotBox.Name = "TotBox";
+            this.TotBox.Size = new System.Drawing.Size(217, 20);
+            this.TotBox.TabIndex = 12;
             // 
             // guna2Button6
             // 
@@ -246,6 +241,7 @@ namespace CafeNoir
             this.guna2Button6.Size = new System.Drawing.Size(147, 61);
             this.guna2Button6.TabIndex = 11;
             this.guna2Button6.Text = "No. of Orders";
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click_1);
             // 
             // guna2Button5
             // 
@@ -264,13 +260,14 @@ namespace CafeNoir
             this.guna2Button5.Size = new System.Drawing.Size(147, 33);
             this.guna2Button5.TabIndex = 10;
             this.guna2Button5.Text = "Show All";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
-            // PriceBox
+            // orderBox
             // 
-            this.PriceBox.Location = new System.Drawing.Point(317, 117);
-            this.PriceBox.Name = "PriceBox";
-            this.PriceBox.Size = new System.Drawing.Size(217, 20);
-            this.PriceBox.TabIndex = 6;
+            this.orderBox.Location = new System.Drawing.Point(317, 117);
+            this.orderBox.Name = "orderBox";
+            this.orderBox.Size = new System.Drawing.Size(217, 20);
+            this.orderBox.TabIndex = 6;
             // 
             // label4
             // 
@@ -318,60 +315,21 @@ namespace CafeNoir
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(238)))));
-            this.panel2.Controls.Add(this.dgvAdmin_Bill);
+            this.panel2.Controls.Add(this.sales_data);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Location = new System.Drawing.Point(189, 11);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(919, 557);
             this.panel2.TabIndex = 5;
             // 
-            // dgvAdmin_Bill
+            // sales_data
             // 
-            this.dgvAdmin_Bill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAdmin_Bill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.OrderID,
-            this.DateTime,
-            this.Products,
-            this.Quantity,
-            this.Total});
-            this.dgvAdmin_Bill.Location = new System.Drawing.Point(16, 287);
-            this.dgvAdmin_Bill.Name = "dgvAdmin_Bill";
-            this.dgvAdmin_Bill.RowHeadersWidth = 46;
-            this.dgvAdmin_Bill.Size = new System.Drawing.Size(879, 216);
-            this.dgvAdmin_Bill.TabIndex = 11;
-            // 
-            // OrderID
-            // 
-            this.OrderID.HeaderText = "OrderID";
-            this.OrderID.MinimumWidth = 6;
-            this.OrderID.Name = "OrderID";
-            this.OrderID.Width = 112;
-            // 
-            // DateTime
-            // 
-            this.DateTime.HeaderText = "DateTime";
-            this.DateTime.MinimumWidth = 6;
-            this.DateTime.Name = "DateTime";
-            this.DateTime.Width = 112;
-            // 
-            // Products
-            // 
-            this.Products.HeaderText = "Products";
-            this.Products.MinimumWidth = 6;
-            this.Products.Name = "Products";
-            this.Products.Width = 112;
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.MinimumWidth = 6;
-            this.Quantity.Name = "Quantity";
-            this.Quantity.Width = 112;
-            // 
-            // Total
-            // 
-            this.Total.HeaderText = "Total";
-            this.Total.Name = "Total";
+            this.sales_data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.sales_data.Location = new System.Drawing.Point(16, 287);
+            this.sales_data.Name = "sales_data";
+            this.sales_data.RowHeadersWidth = 46;
+            this.sales_data.Size = new System.Drawing.Size(879, 216);
+            this.sales_data.TabIndex = 11;
             // 
             // panel1
             // 
@@ -419,7 +377,7 @@ namespace CafeNoir
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAdmin_Bill)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sales_data)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -437,26 +395,21 @@ namespace CafeNoir
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox PriceBox;
+        private System.Windows.Forms.TextBox orderBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dgvAdmin_Bill;
+        private System.Windows.Forms.DataGridView sales_data;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TotBox;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OrderID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DateTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Products;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Total;
     }
 }
