@@ -521,3 +521,4 @@ C:\Users\Berny\Desktop\C# Project Update 6\Cafe-Noir\CafeNoir\CafeNoir\WindowsFo
 C:\Users\Berny\Desktop\C# Project Update 6\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.csproj.CopyComplete
 C:\Users\Berny\Desktop\C# Project Update 6\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.exe
 C:\Users\Berny\Desktop\C# Project Update 6\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.pdb
+C:\Users\User\Desktop\cafe\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Dashboard.resources
