@@ -144,21 +144,17 @@ namespace CafeNoir
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-            DGVPrinter printer = new DGVPrinter();
-            printer.Title = "Invoice";
-            printer.SubTitle = string.Format("Date: " + DateTime.Now);
-            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
-            printer.PageNumbers = true;
-            printer.PageNumberInHeader = false;
-            printer.ProportionalColumns = true;
-            printer.HeaderCellAlignment = StringAlignment.Near;
-            printer.Footer = "Total Amount: " + label8.Text;
-            printer.FooterSpacing = 15;
-            printer.PrintDataGridView(dataGridView1);
+            PrintDialog printDialog1 = new PrintDialog();
 
-            total = 0;
-            dataGridView1.Rows.Clear();
-            label8.Text = "Rs. " + total;
+            printDialog1.Document = printDocument1;
+
+            DialogResult result = printPreviewDialog1.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -275,6 +271,33 @@ namespace CafeNoir
             {
                 con.Close();
             }
+        }
+
+        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Cafe Noir Management System ", new Font("Ubuntu", 23, FontStyle.Bold), Brushes.Red, new Point(160, 10));
+
+
+
+            e.Graphics.DrawString("invoice ", new Font("Ubuntu", 21, FontStyle.Bold), Brushes.Black, new Point(300, 60));
+
+
+
+            e.Graphics.DrawString("Date: " + DateTime.Now.ToShortDateString(), new Font("Ubuntu", 16, FontStyle.Regular), Brushes.Black, new Point(300, 100));
+
+
+
+            e.Graphics.DrawString("___________________________________________________________________________________________________________", new Font("Ubuntu", 20, FontStyle.Regular), Brushes.Black, new Point(0, 120));
+
+
+
+            Bitmap objbmp = new Bitmap(this.dataGridView1.Width, this.dataGridView1.Height);
+            dataGridView1.DrawToBitmap(objbmp, new Rectangle(0, 0, this.dataGridView1.Width, this.dataGridView1.Height));
+            e.Graphics.DrawImage(objbmp, 100, 300);
+
+
+
+            e.Graphics.DrawString("Total: " + label8.Text, new Font("Ubuntu", 16, FontStyle.Regular), Brushes.Black, new Point(500, 200));
         }
     }
 }
