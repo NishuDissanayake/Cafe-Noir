@@ -118,12 +118,20 @@ namespace CafeNoir
             string name = category.Text;
             
             
+            if (name != "") 
+            {
+                string add = "INSERT INTO CategoryTable(Name) VALUES ('" + name + "');";
 
-            string add = "INSERT INTO CategoryTable(Name) VALUES ('" + name + "');";
+                databaseconnection db = new databaseconnection();
+                string feedback = db.dataconnection(add);
+                MessageBox.Show(feedback);
+            }
+            else
+            {
+                MessageBox.Show("Enter your Category !");
+            }
+            
 
-            databaseconnection db = new databaseconnection();
-            string feedback = db.dataconnection(add);
-            MessageBox.Show(feedback);
         }
 
         private void guna2Button11_Click_1(object sender, EventArgs e)
@@ -132,12 +140,26 @@ namespace CafeNoir
             string nname = newname.Text;
 
 
+            if (name != "")
+            {
+                if (nname != "")
+                {
+                    string up = "UPDATE CategoryTable SET Name = '" + nname + "' WHERE Name = '" + name + "' ;";
 
-            string up = "UPDATE CategoryTable SET Name = '" + nname + "' WHERE Name = '" + name + "' ;";
-
-            databaseconnection db = new databaseconnection();
-            string feedback = db.dataconnection(up);
-            MessageBox.Show(feedback);
+                    databaseconnection db = new databaseconnection();
+                    string feedback = db.dataconnection(up);
+                    MessageBox.Show(feedback);
+                }
+                else
+                {
+                    MessageBox.Show("Enter a new category name !");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Enter a Category!");
+            }
+                
         }
 
         private void guna2Button8_Click(object sender, EventArgs e)
@@ -174,15 +196,7 @@ namespace CafeNoir
 
         private void category_Validating(object sender, CancelEventArgs e)
         {
-            if(string.IsNullOrEmpty(category.Text))
-            {
-                category.Focus();
-                errorProvider1.SetError(category, "!");
-            }
-            else
-            {
-                errorProvider1.SetError(category, "");
-            }
+            
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
