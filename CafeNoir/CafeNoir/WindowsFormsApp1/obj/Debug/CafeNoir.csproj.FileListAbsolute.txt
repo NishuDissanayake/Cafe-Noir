@@ -541,3 +541,22 @@ C:\Users\yasara\OneDrive - NSBM\Desktop\c##\Cafe-Noir\CafeNoir\CafeNoir\WindowsF
 C:\Users\yasara\OneDrive - NSBM\Desktop\c##\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.csproj.CopyComplete
 C:\Users\yasara\OneDrive - NSBM\Desktop\c##\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.exe
 C:\Users\yasara\OneDrive - NSBM\Desktop\c##\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.pdb
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.exe.config
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.exe
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.pdb
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\Guna.UI2.dll
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.csprojAssemblyReference.cache
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Categories.resources
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Admin_Home.resources
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Login.resources
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Loading.resources
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Dashboard.resources
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Products.resources
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Properties.Resources.resources
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Staff_Home.resources
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Users.resources
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.csproj.GenerateResource.cache
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.csproj.CoreCompileInputs.cache
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.csproj.CopyComplete
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.exe
+C:\Users\Berny\Desktop\C# Project Update 7\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.pdb
