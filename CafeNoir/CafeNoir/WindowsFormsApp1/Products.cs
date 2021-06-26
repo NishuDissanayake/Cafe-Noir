@@ -54,12 +54,28 @@ namespace CafeNoir
             string itemname = TxtBoxItemName.Text;
             decimal unitprice = decimal.Parse(txtBoxPrice.Text);
 
+            if (itemname != "")
+            {
+                if (itemname != "")
+                {
+                    string up = "UPDATE ProductTable SET UnitPrice = " + unitprice + " WHERE ItemName = '" + itemname + "' ;";
 
-            string up = "UPDATE ProductTable SET UnitPrice = " + unitprice + " WHERE ItemName = '" + itemname + "' ;";
+                    databaseconnection db = new databaseconnection();
+                    string feedback = db.dataconnection(up);
+                    MessageBox.Show(feedback);
+                }
+                else
+                {
+                    MessageBox.Show("Enter the iteam name !");
 
-            databaseconnection db = new databaseconnection();
-            string feedback = db.dataconnection(up);
-            MessageBox.Show(feedback);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("enter the name!");
+            }
+            
         }
 
         private void guna2Button11_Click(object sender, EventArgs e)
@@ -68,12 +84,21 @@ namespace CafeNoir
             string itemname = TxtBoxItemName.Text;
             decimal unitprice = decimal.Parse(txtBoxPrice.Text);
 
+           
+                if (itemname != "")
+                {
+                    string add = "INSERT INTO ProductTable(ItemName, Category, UnitPrice) VALUES ('" + itemname + "', '" + category + "', " + unitprice + ");";
 
-            string add = "INSERT INTO ProductTable(ItemName, Category, UnitPrice) VALUES ('" + itemname + "', '" + category + "', " + unitprice + ");";
-
-            databaseconnection db = new databaseconnection();
-            string feedback = db.dataconnection(add);
-            MessageBox.Show(feedback);
+                    databaseconnection db = new databaseconnection();
+                    string feedback = db.dataconnection(add);
+                    MessageBox.Show(feedback);
+                }
+                else
+                {
+                    MessageBox.Show("Enter your item name !");
+                }
+            
+            
         }
 
         private void guna2Button8_Click(object sender, EventArgs e)
