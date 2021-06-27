@@ -44,9 +44,10 @@ namespace CafeNoir
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(498, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(373, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(601, 567);
+            this.pictureBox1.Size = new System.Drawing.Size(451, 464);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -54,11 +55,13 @@ namespace CafeNoir
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Ubuntu", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(18, 153);
+            this.label1.Location = new System.Drawing.Point(9, 140);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(428, 111);
+            this.label1.Size = new System.Drawing.Size(364, 88);
             this.label1.TabIndex = 1;
             this.label1.Text = "Cafe Noir";
             // 
@@ -66,10 +69,11 @@ namespace CafeNoir
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(50, 295);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(29, 228);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(356, 37);
+            this.label2.Size = new System.Drawing.Size(323, 33);
             this.label2.TabIndex = 2;
             this.label2.Text = "Cafe Management System";
             // 
@@ -77,9 +81,10 @@ namespace CafeNoir
             // 
             this.Myprogress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Myprogress.ForeColor = System.Drawing.Color.Yellow;
-            this.Myprogress.Location = new System.Drawing.Point(-1, 566);
+            this.Myprogress.Location = new System.Drawing.Point(-1, 464);
+            this.Myprogress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Myprogress.Name = "Myprogress";
-            this.Myprogress.Size = new System.Drawing.Size(1100, 18);
+            this.Myprogress.Size = new System.Drawing.Size(825, 10);
             this.Myprogress.TabIndex = 3;
             this.Myprogress.Click += new System.EventHandler(this.Myprogress_Click);
             // 
@@ -93,15 +98,16 @@ namespace CafeNoir
             // 
             // Loading
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.ClientSize = new System.Drawing.Size(1099, 584);
-            this.Controls.Add(this.Myprogress);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(824, 474);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Myprogress);
+            this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Loading";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loading";

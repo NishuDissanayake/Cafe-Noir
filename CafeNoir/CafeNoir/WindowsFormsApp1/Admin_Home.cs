@@ -262,5 +262,15 @@ namespace CafeNoir
 
             e.Graphics.DrawString("Total: " + label8.Text, new Font("Ubuntu", 16, FontStyle.Regular), Brushes.Black, new Point(500, 200));
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
