@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CafeNoir.exe" version="1.0.0.0" publicKeyToken="610470089c9f0d97" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CafeNoir" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CafeNoir.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CafeNoir.exe" size="6266792">
+      <assemblyIdentity name="CafeNoir" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2wfwzxxKl+riJUxoBJBUoT154o1E3xOFAMZdlAf4mp8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Guna.UI2.dll" size="1858504">
+      <assemblyIdentity name="Guna.UI2" version="1.0.1.6" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2d5RQ11wbswIZUbcKuJn8zd7PdaHQhZyzba2YwOkH9k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CafeNoir.exe.config" size="384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LaXorGox0vuNwRKZ63+jPvOBJGH94FP3JvT5ZFGV0vo=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=NISHU-HP\HP" issuerKeyHash="31d154240505bda8001575400f63f14a1f37df8b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Wsfrg7M8F18irfQ6ZXHAtv0DM6Da68SoyFtGtJhmP1M=</DigestValue></Reference></SignedInfo><SignatureValue>K9/esDL+qliB7I1SqT3JzOInLqs4xpwDIJObhIpMg5UmSVsexhVmQWsSdkSZaqp79PYBwVKfzUD8T7zx030Ghl9WOKGuxO+pWPh5VKwJCCScWbqOCaO0PPWz08eV2bb5CB9ZQoqsmKldQ6lJXqDlnRQBmUNRB+PLJSsAm4Lp6O0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>mXIYRCmHdqqSkBJhpmxL8o8YxyaSDfG4yJQlhxzArhRIxLBM+nmx/ceSTAPkyC/dHPHs3I6diIL4mpSAOmK0p6YPa1mGtKYQM8AjjigcE9T+HxwFvEd/XHFHH6VK9HR6MXhXp3vS2yvh40hXMntnmIsGaNuxogkpLhiJutbgXRE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="533f6698b4465bc8a8c4ebdaa03303fdb6c071653af4ad225f173cb383ebc75a" Description="" Url=""><as:assemblyIdentity name="CafeNoir.exe" version="1.0.0.0" publicKeyToken="610470089c9f0d97" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=NISHU-HP\HP</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kTc/Rs1z03Nax/9pZhNGSrb2t/0GGxkEnEUmg4vMlM8=</DigestValue></Reference></SignedInfo><SignatureValue>U0UCk+tPdLgJaEgnqlJtAXYqpWEoxFcXcr3bXkIkABe7/mVNHgTohGm9k4vVKGJn8As2d+XOpzaIvx3kZfeS7Z9la+/1E9L76r4eVBBhm/t8tANEqKkLbsKNhRkxU0RBYiNjQ7SXQjPb044fL2+R9CNp6tRGYMPGR5/d47wuBFE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>mXIYRCmHdqqSkBJhpmxL8o8YxyaSDfG4yJQlhxzArhRIxLBM+nmx/ceSTAPkyC/dHPHs3I6diIL4mpSAOmK0p6YPa1mGtKYQM8AjjigcE9T+HxwFvEd/XHFHH6VK9HR6MXhXp3vS2yvh40hXMntnmIsGaNuxogkpLhiJutbgXRE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQfDWgiQsg6rhGKK7DOQnZLDANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYATgBJAFMASABVAC0ASABQAFwASABQMB4XDTIxMDYyNzEwNDQzNFoXDTIyMDYyNzE2NDQzNFowITEfMB0GA1UEAx4WAE4ASQBTAEgAVQAtAEgAUABcAEgAUDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAmXIYRCmHdqqSkBJhpmxL8o8YxyaSDfG4yJQlhxzArhRIxLBM+nmx/ceSTAPkyC/dHPHs3I6diIL4mpSAOmK0p6YPa1mGtKYQM8AjjigcE9T+HxwFvEd/XHFHH6VK9HR6MXhXp3vS2yvh40hXMntnmIsGaNuxogkpLhiJutbgXRECAwEAATANBgkqhkiG9w0BAQsFAAOBgQAOZbZPInrXvhIvtQCwtKomZwRfhb3mwlYlWamxhmwOc0atzB4+aVpnnrszk754qBO2AD1ljbs0HVSoxqmGc34eFkSfqSBApIUe4jULV8EiZ8WOF22LP+SWV6BOTZojTF2UHF9P10A5jwEnerriSeSMszuqK40db2h6mXK0UlSonw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
