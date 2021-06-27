@@ -72,10 +72,10 @@ namespace CafeNoir
             this.guna2Button5.CustomImages.Parent = this.guna2Button5;
             this.guna2Button5.DisabledState.Parent = this.guna2Button5;
             this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button5.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(34, 307);
+            this.guna2Button5.Location = new System.Drawing.Point(34, 289);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
             this.guna2Button5.Size = new System.Drawing.Size(211, 55);
@@ -91,7 +91,7 @@ namespace CafeNoir
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.DisabledState.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(34, 70);
@@ -110,10 +110,10 @@ namespace CafeNoir
             this.guna2Button4.CustomImages.Parent = this.guna2Button4;
             this.guna2Button4.DisabledState.Parent = this.guna2Button4;
             this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button4.ForeColor = System.Drawing.Color.Black;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(34, 246);
+            this.guna2Button4.Location = new System.Drawing.Point(34, 234);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
             this.guna2Button4.Size = new System.Drawing.Size(211, 55);
@@ -129,7 +129,7 @@ namespace CafeNoir
             this.guna2Button3.CustomImages.Parent = this.guna2Button3;
             this.guna2Button3.DisabledState.Parent = this.guna2Button3;
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.Black;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Location = new System.Drawing.Point(34, 124);
@@ -148,10 +148,10 @@ namespace CafeNoir
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
             this.guna2Button2.DisabledState.Parent = this.guna2Button2;
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(238)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(34, 185);
+            this.guna2Button2.Location = new System.Drawing.Point(34, 179);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(211, 55);
@@ -182,11 +182,11 @@ namespace CafeNoir
             this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.DisabledState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.DarkRed;
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.Red;
             this.guna2CircleButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(2, 2);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(0, -1);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
@@ -201,12 +201,13 @@ namespace CafeNoir
             this.linkLabel1.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(47, 519);
+            this.linkLabel1.Location = new System.Drawing.Point(25, 533);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(89, 35);
+            this.linkLabel1.Size = new System.Drawing.Size(102, 35);
             this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Logout";
+            this.linkLabel1.Text = "LogOut";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label8
@@ -215,19 +216,17 @@ namespace CafeNoir
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(12, 36);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(36, 24);
+            this.label8.Size = new System.Drawing.Size(41, 25);
             this.label8.TabIndex = 8;
             this.label8.Text = "Hi,";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(47, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 24);
+            this.label1.Size = new System.Drawing.Size(97, 25);
             this.label1.TabIndex = 4;
-            this.label1.Text = "ABC123";
             // 
             // guna2Button12
             // 
@@ -236,7 +235,7 @@ namespace CafeNoir
             this.guna2Button12.CustomImages.Parent = this.guna2Button12;
             this.guna2Button12.DisabledState.Parent = this.guna2Button12;
             this.guna2Button12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.guna2Button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button12.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button12.ForeColor = System.Drawing.Color.Black;
             this.guna2Button12.HoverState.Parent = this.guna2Button12;
             this.guna2Button12.Location = new System.Drawing.Point(187, 144);
@@ -254,7 +253,7 @@ namespace CafeNoir
             this.guna2Button11.CustomImages.Parent = this.guna2Button11;
             this.guna2Button11.DisabledState.Parent = this.guna2Button11;
             this.guna2Button11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.guna2Button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button11.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button11.ForeColor = System.Drawing.Color.Black;
             this.guna2Button11.HoverState.Parent = this.guna2Button11;
             this.guna2Button11.Location = new System.Drawing.Point(355, 144);
@@ -272,7 +271,7 @@ namespace CafeNoir
             this.guna2Button8.CustomImages.Parent = this.guna2Button8;
             this.guna2Button8.DisabledState.Parent = this.guna2Button8;
             this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.guna2Button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button8.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button8.ForeColor = System.Drawing.Color.Black;
             this.guna2Button8.HoverState.Parent = this.guna2Button8;
             this.guna2Button8.Location = new System.Drawing.Point(526, 144);
@@ -290,7 +289,7 @@ namespace CafeNoir
             this.guna2Button6.CustomImages.Parent = this.guna2Button6;
             this.guna2Button6.DisabledState.Parent = this.guna2Button6;
             this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button6.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button6.ForeColor = System.Drawing.Color.Black;
             this.guna2Button6.HoverState.Parent = this.guna2Button6;
             this.guna2Button6.Location = new System.Drawing.Point(700, 144);
@@ -308,7 +307,7 @@ namespace CafeNoir
             this.guna2Button7.CustomImages.Parent = this.guna2Button7;
             this.guna2Button7.DisabledState.Parent = this.guna2Button7;
             this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.guna2Button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button7.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button7.ForeColor = System.Drawing.Color.Black;
             this.guna2Button7.HoverState.Parent = this.guna2Button7;
             this.guna2Button7.Location = new System.Drawing.Point(26, 144);
@@ -340,61 +339,64 @@ namespace CafeNoir
             // 
             // ComboCategory
             // 
+            this.ComboCategory.Font = new System.Drawing.Font("Ubuntu", 9.333332F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboCategory.FormattingEnabled = true;
             this.ComboCategory.Items.AddRange(new object[] {
             "Drinks",
             "Bun"});
             this.ComboCategory.Location = new System.Drawing.Point(13, 83);
             this.ComboCategory.Name = "ComboCategory";
-            this.ComboCategory.Size = new System.Drawing.Size(196, 21);
+            this.ComboCategory.Size = new System.Drawing.Size(196, 26);
             this.ComboCategory.TabIndex = 19;
             this.ComboCategory.SelectedIndexChanged += new System.EventHandler(this.ComboCategory_SelectedIndexChanged);
             this.ComboCategory.Validating += new System.ComponentModel.CancelEventHandler(this.ComboCategory_Validating);
             // 
             // txtBoxPrice
             // 
+            this.txtBoxPrice.Font = new System.Drawing.Font("Ubuntu", 9.333332F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxPrice.Location = new System.Drawing.Point(610, 83);
             this.txtBoxPrice.Name = "txtBoxPrice";
-            this.txtBoxPrice.Size = new System.Drawing.Size(196, 20);
+            this.txtBoxPrice.Size = new System.Drawing.Size(196, 24);
             this.txtBoxPrice.TabIndex = 18;
             // 
             // TxtBoxItemName
             // 
+            this.TxtBoxItemName.Font = new System.Drawing.Font("Ubuntu", 9.333332F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBoxItemName.Location = new System.Drawing.Point(304, 83);
             this.TxtBoxItemName.Name = "TxtBoxItemName";
-            this.TxtBoxItemName.Size = new System.Drawing.Size(196, 20);
+            this.TxtBoxItemName.Size = new System.Drawing.Size(196, 24);
             this.TxtBoxItemName.TabIndex = 17;
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(606, 32);
+            this.label6.Font = new System.Drawing.Font("Ubuntu", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(605, 32);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(123, 34);
             this.label6.TabIndex = 15;
             this.label6.Text = "Unit Price";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(300, 32);
+            this.label5.Font = new System.Drawing.Font("Ubuntu", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(299, 32);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 34);
             this.label5.TabIndex = 14;
             this.label5.Text = "Item Name";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 32);
+            this.label3.Font = new System.Drawing.Font("Ubuntu", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(8, 32);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 34);
             this.label3.TabIndex = 11;
             this.label3.Text = "Category";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel2
             // 
@@ -404,19 +406,19 @@ namespace CafeNoir
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Location = new System.Drawing.Point(181, 10);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(918, 562);
+            this.panel2.Size = new System.Drawing.Size(887, 562);
             this.panel2.TabIndex = 4;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(211, 319);
+            this.dataGridView1.Location = new System.Drawing.Point(129, 279);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(470, 117);
+            this.dataGridView1.Size = new System.Drawing.Size(586, 185);
             this.dataGridView1.TabIndex = 8;
             // 
             // guna2Elipse1

@@ -55,13 +55,6 @@ namespace CafeNoir
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            uname.ResetText();
-            pass.ResetText();
-            
-        }
-
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -80,52 +73,6 @@ namespace CafeNoir
             set { username = value; }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            recby = uname.Text;
-            con = new SqlConnection(ConfigurationManager.ConnectionStrings["CC"].ConnectionString);
-
-            try
-            {
-                SqlCommand com = new SqlCommand("roleLogin", con);
-                com.CommandType = CommandType.StoredProcedure;
-                con.Open();
-                com.Parameters.AddWithValue("@UName", uname.Text);
-                com.Parameters.AddWithValue("@PCode",pwd);
-                SqlDataReader rd = com.ExecuteReader();
-                if (rd.HasRows)
-                {
-                    rd.Read();
-                    if (rd[1].ToString()=="Admin")
-                    {
-                        Admin_Home ah = new Admin_Home();
-                        ah.Show();
-                        this.Hide();
-                    }
-                    else if (rd[1].ToString()=="Staff")
-                    {
-                        Staff_Home sf = new Staff_Home();
-                        sf.Show();
-                        this.Hide();
-                    }   
-                    else
-                    {
-                        MessageBox.Show("An error occured");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Invalid Credentials");
-                }
-
-            }
-            catch(SqlException ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-
-
-        }
 
         public string Hash(Byte[] val)
         {
@@ -148,6 +95,57 @@ namespace CafeNoir
         private void button2_Validating(object sender, CancelEventArgs e)
         {
 
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            recby = uname.Text;
+            con = new SqlConnection(ConfigurationManager.ConnectionStrings["CC"].ConnectionString);
+
+            try
+            {
+                SqlCommand com = new SqlCommand("roleLogin", con);
+                com.CommandType = CommandType.StoredProcedure;
+                con.Open();
+                com.Parameters.AddWithValue("@UName", uname.Text);
+                com.Parameters.AddWithValue("@PCode", pwd);
+                SqlDataReader rd = com.ExecuteReader();
+                if (rd.HasRows)
+                {
+                    rd.Read();
+                    if (rd[1].ToString() == "Admin")
+                    {
+                        Admin_Home ah = new Admin_Home();
+                        ah.Show();
+                        this.Hide();
+                    }
+                    else if (rd[1].ToString() == "Staff")
+                    {
+                        Staff_Home sf = new Staff_Home();
+                        sf.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("An error occured");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Credentials");
+                }
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            uname.ResetText();
+            pass.ResetText();
         }
     }
 }
