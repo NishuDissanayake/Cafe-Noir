@@ -113,19 +113,27 @@ namespace CafeNoir
 
             if (TotalBox.Text != "0.00" && TotalBox.Text != "")
             {
-                n = dgvAdmin_Bill.Rows.Add();
-                dgvAdmin_Bill.Rows[n].Cells[0].Value = ItemBox.Text;
-                dgvAdmin_Bill.Rows[n].Cells[1].Value = PriceBox.Text;
-                dgvAdmin_Bill.Rows[n].Cells[2].Value = QuantityBox.Text;
-                dgvAdmin_Bill.Rows[n].Cells[3].Value = TotalBox.Text;
+                if (ItemBox.Text != "" && PriceBox.Text != "")
+                {
+                    n = dgvAdmin_Bill.Rows.Add();
+                    dgvAdmin_Bill.Rows[n].Cells[0].Value = ItemBox.Text;
+                    dgvAdmin_Bill.Rows[n].Cells[1].Value = PriceBox.Text;
+                    dgvAdmin_Bill.Rows[n].Cells[2].Value = QuantityBox.Text;
+                    dgvAdmin_Bill.Rows[n].Cells[3].Value = TotalBox.Text;
 
-                total = total + decimal.Parse(TotalBox.Text);
-                label8.Text = "Rs. " + total;
+                    total = total + decimal.Parse(TotalBox.Text);
+                    label8.Text = "Rs. " + total;
 
-                ItemBox.ResetText();
-                PriceBox.ResetText();
-                QuantityBox.ResetText();
-                TotalBox.ResetText();
+                    ItemBox.ResetText();
+                    PriceBox.ResetText();
+                    QuantityBox.ResetText();
+                    TotalBox.ResetText();
+                }
+                else
+                {
+                    MessageBox.Show("Please enter values", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                
             }
             else
             {
@@ -269,6 +277,11 @@ namespace CafeNoir
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }

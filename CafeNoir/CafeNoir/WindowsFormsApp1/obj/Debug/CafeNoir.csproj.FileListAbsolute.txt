@@ -579,3 +579,8 @@ C:\Users\Mahima\Documents\C# Project Updated 10\Cafe-Noir\CafeNoir\CafeNoir\Wind
 C:\Users\Mahima\Documents\C# Project Updated 10\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.csproj.CopyComplete
 C:\Users\Mahima\Documents\C# Project Updated 10\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.exe
 C:\Users\Mahima\Documents\C# Project Updated 10\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.pdb
+C:\Users\HP\Desktop\Cafe Noir\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Dashboard.resources
+C:\Users\HP\Desktop\Cafe Noir\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.exe.manifest
+C:\Users\HP\Desktop\Cafe Noir\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.application
+C:\Users\HP\Desktop\Cafe Noir\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.exe.manifest
+C:\Users\HP\Desktop\Cafe Noir\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.application

@@ -71,14 +71,21 @@ namespace CafeNoir
         {
             if (TotalBox.Text != "0.00" && TotalBox.Text != "")
             {
-                n = dataGridView1.Rows.Add();
-                dataGridView1.Rows[n].Cells[0].Value = ItemBox.Text;
-                dataGridView1.Rows[n].Cells[1].Value = PriceBox.Text;
-                dataGridView1.Rows[n].Cells[2].Value = QuantityBox.Text;
-                dataGridView1.Rows[n].Cells[3].Value = TotalBox.Text;
+                if (ItemBox.Text != "" && PriceBox.Text != "")
+                {
+                    n = dataGridView1.Rows.Add();
+                    dataGridView1.Rows[n].Cells[0].Value = ItemBox.Text;
+                    dataGridView1.Rows[n].Cells[1].Value = PriceBox.Text;
+                    dataGridView1.Rows[n].Cells[2].Value = QuantityBox.Text;
+                    dataGridView1.Rows[n].Cells[3].Value = TotalBox.Text;
 
-                total = total + decimal.Parse(TotalBox.Text);
-                label8.Text = "Rs. " + total;
+                    total = total + decimal.Parse(TotalBox.Text);
+                    label8.Text = "Rs. " + total;
+                }
+                else
+                {
+                    MessageBox.Show("Please enter values!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else
             {
