@@ -216,7 +216,7 @@ namespace CafeNoir
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(12, 36);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(36, 24);
+            this.label8.Size = new System.Drawing.Size(41, 25);
             this.label8.TabIndex = 8;
             this.label8.Text = "Hi,";
             // 
@@ -346,7 +346,7 @@ namespace CafeNoir
             "Bun"});
             this.ComboCategory.Location = new System.Drawing.Point(13, 83);
             this.ComboCategory.Name = "ComboCategory";
-            this.ComboCategory.Size = new System.Drawing.Size(196, 23);
+            this.ComboCategory.Size = new System.Drawing.Size(196, 25);
             this.ComboCategory.TabIndex = 19;
             this.ComboCategory.SelectedIndexChanged += new System.EventHandler(this.ComboCategory_SelectedIndexChanged);
             this.ComboCategory.Validating += new System.ComponentModel.CancelEventHandler(this.ComboCategory_Validating);
@@ -356,7 +356,7 @@ namespace CafeNoir
             this.txtBoxPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.333332F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxPrice.Location = new System.Drawing.Point(610, 83);
             this.txtBoxPrice.Name = "txtBoxPrice";
-            this.txtBoxPrice.Size = new System.Drawing.Size(196, 22);
+            this.txtBoxPrice.Size = new System.Drawing.Size(196, 23);
             this.txtBoxPrice.TabIndex = 18;
             // 
             // TxtBoxItemName
@@ -364,7 +364,7 @@ namespace CafeNoir
             this.TxtBoxItemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.333332F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBoxItemName.Location = new System.Drawing.Point(304, 83);
             this.TxtBoxItemName.Name = "TxtBoxItemName";
-            this.TxtBoxItemName.Size = new System.Drawing.Size(196, 22);
+            this.TxtBoxItemName.Size = new System.Drawing.Size(196, 23);
             this.TxtBoxItemName.TabIndex = 17;
             // 
             // label6
@@ -412,14 +412,16 @@ namespace CafeNoir
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(238)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(129, 279);
+            this.dataGridView1.Location = new System.Drawing.Point(211, 279);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(586, 185);
+            this.dataGridView1.Size = new System.Drawing.Size(454, 185);
             this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // guna2Elipse1
             // 

@@ -102,7 +102,7 @@ namespace CafeNoir
             this.TotalBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.333332F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalBox.Location = new System.Drawing.Point(365, 142);
             this.TotalBox.Name = "TotalBox";
-            this.TotalBox.Size = new System.Drawing.Size(217, 22);
+            this.TotalBox.Size = new System.Drawing.Size(217, 23);
             this.TotalBox.TabIndex = 7;
             // 
             // PriceBox
@@ -110,7 +110,7 @@ namespace CafeNoir
             this.PriceBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.333332F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriceBox.Location = new System.Drawing.Point(365, 47);
             this.PriceBox.Name = "PriceBox";
-            this.PriceBox.Size = new System.Drawing.Size(217, 22);
+            this.PriceBox.Size = new System.Drawing.Size(217, 23);
             this.PriceBox.TabIndex = 6;
             // 
             // label7
@@ -127,7 +127,7 @@ namespace CafeNoir
             this.QuantityBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.333332F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QuantityBox.Location = new System.Drawing.Point(31, 143);
             this.QuantityBox.Name = "QuantityBox";
-            this.QuantityBox.Size = new System.Drawing.Size(216, 22);
+            this.QuantityBox.Size = new System.Drawing.Size(216, 23);
             this.QuantityBox.TabIndex = 4;
             this.QuantityBox.ValueChanged += new System.EventHandler(this.QuantityBox_ValueChanged);
             // 
@@ -136,10 +136,10 @@ namespace CafeNoir
             this.ItemList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(226)))), ((int)(((byte)(195)))));
             this.ItemList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemList.FormattingEnabled = true;
-            this.ItemList.ItemHeight = 16;
+            this.ItemList.ItemHeight = 18;
             this.ItemList.Location = new System.Drawing.Point(38, 130);
             this.ItemList.Name = "ItemList";
-            this.ItemList.Size = new System.Drawing.Size(198, 372);
+            this.ItemList.Size = new System.Drawing.Size(198, 364);
             this.ItemList.TabIndex = 0;
             this.ItemList.SelectedIndexChanged += new System.EventHandler(this.ItemList_SelectedIndexChanged);
             // 
@@ -160,7 +160,7 @@ namespace CafeNoir
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(26, 106);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 24);
+            this.label5.Size = new System.Drawing.Size(100, 25);
             this.label5.TabIndex = 2;
             this.label5.Text = "Quantity";
             // 
@@ -169,7 +169,7 @@ namespace CafeNoir
             this.ItemBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.333332F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemBox.Location = new System.Drawing.Point(31, 47);
             this.ItemBox.Name = "ItemBox";
-            this.ItemBox.Size = new System.Drawing.Size(217, 22);
+            this.ItemBox.Size = new System.Drawing.Size(217, 23);
             this.ItemBox.TabIndex = 1;
             this.ItemBox.TextChanged += new System.EventHandler(this.ItemBox_TextChanged);
             // 
@@ -331,7 +331,7 @@ namespace CafeNoir
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(360, 15);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 24);
+            this.label6.Size = new System.Drawing.Size(66, 25);
             this.label6.TabIndex = 3;
             this.label6.Text = "Price";
             // 
@@ -362,7 +362,7 @@ namespace CafeNoir
             "Bun"});
             this.Categories.Location = new System.Drawing.Point(38, 44);
             this.Categories.Name = "Categories";
-            this.Categories.Size = new System.Drawing.Size(198, 23);
+            this.Categories.Size = new System.Drawing.Size(198, 25);
             this.Categories.TabIndex = 1;
             this.Categories.SelectedIndexChanged += new System.EventHandler(this.Categories_SelectedIndexChanged);
             // 
@@ -372,7 +372,7 @@ namespace CafeNoir
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(32, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 26);
+            this.label3.Size = new System.Drawing.Size(141, 29);
             this.label3.TabIndex = 0;
             this.label3.Text = "Categories";
             // 
@@ -402,7 +402,7 @@ namespace CafeNoir
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(3, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 25);
+            this.label1.Size = new System.Drawing.Size(45, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hi,";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -519,6 +519,8 @@ namespace CafeNoir
             // 
             // guna2Button9
             // 
+            this.guna2Button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
+            this.guna2Button9.BorderRadius = 30;
             this.guna2Button9.CheckedState.Parent = this.guna2Button9;
             this.guna2Button9.CustomImages.Parent = this.guna2Button9;
             this.guna2Button9.DisabledState.Parent = this.guna2Button9;
