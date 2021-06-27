@@ -55,6 +55,8 @@ namespace CafeNoir
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sales_data)).BeginInit();
@@ -194,6 +196,8 @@ namespace CafeNoir
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(226)))), ((int)(((byte)(195)))));
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.guna2Button2);
             this.panel4.Controls.Add(this.TotBox);
             this.panel4.Controls.Add(this.guna2Button6);
@@ -215,20 +219,20 @@ namespace CafeNoir
             this.guna2Button2.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(503, 85);
+            this.guna2Button2.Location = new System.Drawing.Point(614, 33);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(140, 60);
             this.guna2Button2.TabIndex = 13;
-            this.guna2Button2.Text = "Total";
+            this.guna2Button2.Text = "Show";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // TotBox
             // 
-            this.TotBox.Font = new System.Drawing.Font("Ubuntu", 9.333332F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotBox.Location = new System.Drawing.Point(503, 38);
+            this.TotBox.Font = new System.Drawing.Font("Ubuntu", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotBox.Location = new System.Drawing.Point(386, 61);
             this.TotBox.Name = "TotBox";
-            this.TotBox.Size = new System.Drawing.Size(175, 24);
+            this.TotBox.Size = new System.Drawing.Size(175, 32);
             this.TotBox.TabIndex = 12;
             // 
             // guna2Button6
@@ -241,12 +245,12 @@ namespace CafeNoir
             this.guna2Button6.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button6.ForeColor = System.Drawing.Color.Black;
             this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Location = new System.Drawing.Point(247, 85);
+            this.guna2Button6.Location = new System.Drawing.Point(614, 142);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
             this.guna2Button6.Size = new System.Drawing.Size(140, 60);
             this.guna2Button6.TabIndex = 11;
-            this.guna2Button6.Text = "No. of Orders";
+            this.guna2Button6.Text = "Show";
             this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click_1);
             // 
             // guna2Button5
@@ -260,7 +264,7 @@ namespace CafeNoir
             this.guna2Button5.Font = new System.Drawing.Font("Ubuntu Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(25, 85);
+            this.guna2Button5.Location = new System.Drawing.Point(86, 113);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
             this.guna2Button5.Size = new System.Drawing.Size(140, 60);
@@ -270,16 +274,16 @@ namespace CafeNoir
             // 
             // orderBox
             // 
-            this.orderBox.Font = new System.Drawing.Font("Ubuntu", 9.333332F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orderBox.Location = new System.Drawing.Point(247, 38);
+            this.orderBox.Font = new System.Drawing.Font("Ubuntu", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderBox.Location = new System.Drawing.Point(386, 170);
             this.orderBox.Name = "orderBox";
-            this.orderBox.Size = new System.Drawing.Size(184, 24);
+            this.orderBox.Size = new System.Drawing.Size(175, 32);
             this.orderBox.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Ubuntu", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(20, 38);
+            this.label4.Location = new System.Drawing.Point(81, 65);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(154, 24);
             this.label4.TabIndex = 0;
@@ -332,11 +336,12 @@ namespace CafeNoir
             // 
             // sales_data
             // 
+            this.sales_data.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(238)))));
             this.sales_data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.sales_data.Location = new System.Drawing.Point(16, 287);
+            this.sales_data.Location = new System.Drawing.Point(176, 301);
             this.sales_data.Name = "sales_data";
             this.sales_data.RowHeadersWidth = 46;
-            this.sales_data.Size = new System.Drawing.Size(879, 216);
+            this.sales_data.Size = new System.Drawing.Size(550, 216);
             this.sales_data.TabIndex = 11;
             // 
             // panel1
@@ -369,6 +374,24 @@ namespace CafeNoir
             // guna2BorderlessForm1
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Ubuntu Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(383, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(124, 25);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Total : ";
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Ubuntu Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(383, 135);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(124, 25);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "No. of Orders :";
             // 
             // Dashboard
             // 
@@ -420,5 +443,7 @@ namespace CafeNoir
         private System.Windows.Forms.TextBox TotBox;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
     }
 }

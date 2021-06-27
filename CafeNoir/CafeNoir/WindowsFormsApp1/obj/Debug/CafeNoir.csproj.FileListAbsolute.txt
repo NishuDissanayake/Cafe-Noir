@@ -584,3 +584,26 @@ C:\Users\HP\Desktop\Cafe Noir\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\D
 C:\Users\HP\Desktop\Cafe Noir\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.application
 C:\Users\HP\Desktop\Cafe Noir\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.exe.manifest
 C:\Users\HP\Desktop\Cafe Noir\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.application
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.exe.config
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.exe.manifest
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.application
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.exe
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\CafeNoir.pdb
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\bin\Debug\Guna.UI2.dll
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.csprojAssemblyReference.cache
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Categories.resources
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Admin_Home.resources
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Login.resources
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Loading.resources
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Dashboard.resources
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Products.resources
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Properties.Resources.resources
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Staff_Home.resources
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.Users.resources
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.csproj.GenerateResource.cache
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.csproj.CoreCompileInputs.cache
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.exe.manifest
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.application
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.csproj.CopyComplete
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.exe
+C:\Users\Mahima\Documents\C# Project Updated 11\Cafe-Noir\CafeNoir\CafeNoir\WindowsFormsApp1\obj\Debug\CafeNoir.pdb
