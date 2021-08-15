@@ -256,19 +256,21 @@ namespace CafeNoir
 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Cafe Noir Management System ", new Font("Ubuntu", 23, FontStyle.Bold), Brushes.Red, new Point(160, 10));
+            e.Graphics.DrawString("Cafe Noir Management System ", new Font("Ubuntu", 23, FontStyle.Bold), Brushes.SandyBrown, new Point(190, 10));
 
-            e.Graphics.DrawString("invoice ", new Font("Ubuntu", 21, FontStyle.Bold), Brushes.Black, new Point(300, 60));
+            e.Graphics.DrawString("Invoice ", new Font("Ubuntu", 21, FontStyle.Bold), Brushes.Black, new Point(350, 60));
 
-            e.Graphics.DrawString("Date: " + DateTime.Now.ToShortDateString(), new Font("Ubuntu", 16, FontStyle.Regular), Brushes.Black, new Point(300, 100));
+            e.Graphics.DrawString("Date: " + DateTime.Now.ToShortDateString(), new Font("Ubuntu", 16, FontStyle.Regular), Brushes.Black, new Point(350, 100));
 
-            e.Graphics.DrawString("_____________________________________", new Font("Ubuntu", 20, FontStyle.Regular), Brushes.Black, new Point(0, 120));
+            e.Graphics.DrawString("_________________________________________________________________________", new Font("Ubuntu", 20, FontStyle.Regular), Brushes.Black, new Point(0, 120));
 
             Bitmap objbmp = new Bitmap(this.dgvAdmin_Bill.Width, this.dgvAdmin_Bill.Height);
             dgvAdmin_Bill.DrawToBitmap(objbmp, new Rectangle(0, 0, this.dgvAdmin_Bill.Width, this.dgvAdmin_Bill.Height));
-            e.Graphics.DrawImage(objbmp, 100, 300);
+            e.Graphics.DrawImage(objbmp, 100, 200);
 
-            e.Graphics.DrawString("Total: " + label8.Text, new Font("Ubuntu", 16, FontStyle.Regular), Brushes.Black, new Point(500, 200));
+            e.Graphics.DrawString("_________________________________________________________________________", new Font("Ubuntu", 20, FontStyle.Regular), Brushes.Black, new Point(0, 600));
+
+            e.Graphics.DrawString("Total: " + label8.Text, new Font("Ubuntu", 16, FontStyle.Regular), Brushes.Black, new Point(580, 660));
         }
 
         private void label1_Click(object sender, EventArgs e)
