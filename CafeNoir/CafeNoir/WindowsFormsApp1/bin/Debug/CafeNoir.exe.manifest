@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CafeNoir.exe" size="6267816">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CafeNoir.exe" size="6268840">
       <assemblyIdentity name="CafeNoir" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>T7HaMqC7Uu0yrxQ40ct5mwji5diJhZHzUANQoCsfgDo=</dsig:DigestValue>
+        <dsig:DigestValue>jHYSgsjXY1K81Fb/T70otOSz7yuzY42RmK/KXs6fpiQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
